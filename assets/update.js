@@ -319,6 +319,33 @@ const run = async () => {
       textFit(textElement, { maxFontSize: 10 });
     }
   });
+
+  const cardsLeft = [...document.querySelectorAll(".card.card-left")];
+  const cardsRight = [...document.querySelectorAll(".card.card-right")];
+  if (cardsLeft.length !== cardsRight.length) {
+    throw new Error(
+      "There is no same number of fronts to the backs of the cards!"
+    );
+  }
+
+  const onLeftCardClick = (event) => {
+    event.currentTarget.classList.toggle("select");
+    document
+      .querySelector(`#${event.currentTarget.id}-back`)
+      .classList.toggle("select");
+
+    document.body.classList.add("editing");
+
+    if (!document.querySelectorAll(".select").length) {
+      document.body.classList.remove("editing");
+      return false;
+    }
+  };
+
+  cardsLeft.forEach((left, index) => {
+    left.addEventListener("click", onLeftCardClick);
+    cardsRight[index].id = `${left.id}-back`;
+  });
 };
 
 run();

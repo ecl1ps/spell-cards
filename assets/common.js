@@ -59,7 +59,7 @@ $(document).ready(function () {
          window.open(url);*/
   });
 
-  $(".card").click(function () {
+  /*$(".card").click(function () {
     $("body").addClass("editing");
     $(this).toggleClass("select");
 
@@ -84,7 +84,7 @@ $(document).ready(function () {
       url += "&spellbook";
     }
     $("#getUrl").attr("href", url);
-  });
+  });*/
 
   $(".minus").click(function () {
     val = $("#paddingLeft").val() * 1;
