@@ -1,31 +1,21 @@
-
-
-/*print*/	
+/*print*/
 
 @page {
-    margin: 0.4cm 0.4cm;
-    size:210mm 297mm;
-    -webkit-print-color-adjust: exact; 
+  margin: 0.4cm 0.4cm;
+  size: 210mm 297mm;
+  -webkit-print-color-adjust: exact;
 }
 
 @media print {
+  .back {
+    opacity: 0;
+  }
 
+  .mirror .back {
+    opacity: 1;
+  }
 
-    .back 
-    {
-    	opacity:0;
-    }
-    
-
-    .mirror .back 
-    {
-    	opacity:1;
-    }	
-
-	.subpage {    
-		
-		zoom:1;
-	}	
-	
-	
-}    
+  .subpage {
+    zoom: 1;
+  }
+}
