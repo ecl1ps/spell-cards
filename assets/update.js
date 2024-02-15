@@ -70,20 +70,6 @@ const run = async () => {
           return `${schools[school]} / ${school}`;
         }),
     },
-    {
-      regex: /^Artificer \(.+\)$/,
-      replacer: (text) =>
-        text.replace(/^Artificer \((.+)\)$/, (matched, datadisc) => {
-          return `Divutepec (${datadisc})`;
-        }),
-    },
-    {
-      regex: /^Wizard \(.+\)$/,
-      replacer: (text) =>
-        text.replace(/^Wizard \((.+)\)$/, (matched, datadisc) => {
-          return `Kouzelník (${datadisc})`;
-        }),
-    },
   ];
 
   function translateMiscTexts() {
