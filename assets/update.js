@@ -105,20 +105,38 @@ const run = async () => {
   document.getElementById("style-override")?.remove();
   document.body.appendChild(style);
 
-  const spellNames = {
-    ...(await (await fetch("./data/spellNamesCzGrimoire.json")).json()),
-    ...(await (await fetch("./data/spellNamesCzOverrides.json")).json()),
-  };
-  const spellDescriptions = await (
-    await fetch("./data/spellDescriptionsCzGrimoire.json")
-  ).json();
-  const spellIngredients = await (
-    await fetch("./data/spellIngredientsCzGrimoire.json")
-  ).json();
-
   const spellNameEnFix = {
     "geas [obligation or prohibition]": "geas",
   };
+
+  const spellNameCzFix = {
+    'slovo moci „bolest"': 'slovo moci "bolest"',
+    'slovo moci „ochrom "': 'slovo moci "ochrom"',
+    'slovo moci „uzdrav "': 'slovo moci "uzdrav"',
+    'slovo moci „zabij "': 'slovo moci "zabij"',
+  };
+
+  const spellNames = Object.fromEntries(
+    Object.entries({
+      ...(await (await fetch("./data/spellNamesCzGrimoire.json")).json()),
+      ...(await (await fetch("./data/spellNamesCzOverrides.json")).json()),
+    }).map(([en, cz]) => [en, spellNameCzFix[cz] ?? cz])
+  );
+  const spellDescriptions = Object.entries(spellNameCzFix).reduce(
+    (acc, [bad, good]) => {
+      acc[good] = acc[bad];
+      return acc;
+    },
+    await (await fetch("./data/spellDescriptionsCzGrimoire.json")).json()
+  );
+
+  const spellIngredients = Object.entries(spellNameCzFix).reduce(
+    (acc, [bad, good]) => {
+      acc[good] = acc[bad];
+      return acc;
+    },
+    await (await fetch("./data/spellIngredientsCzGrimoire.json")).json()
+  );
 
   const translations = await (
     await fetch("./data/miscTranslationsCz.json")
@@ -188,6 +206,7 @@ const run = async () => {
         );
     }
   };
+
   [
     ...document.querySelector(".cardlist").querySelectorAll(".name.srname"),
   ].forEach((el) => {
