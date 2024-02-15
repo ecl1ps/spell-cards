@@ -1,0 +1,23 @@
+﻿{
+  "wizard": {
+    "background": "#555",
+    "separator": "#555",
+    "header": "rgb(166 145 255)",
+    "backface": "rgb(45 0 200)",
+    "backSymbols": "#222"
+  },
+  "artificer": {
+    "background": "#555",
+    "separator": "#888",
+    "header": "goldenrod",
+    "backface": "darkgoldenrod",
+    "backSymbols": "#222"
+  },
+  "bard": {
+    "background": "#8c5385",
+    "separator": "#8c5385",
+    "header": "#d9b5d9",
+    "backface": "#8c5385",
+    "backSymbols": "#222"
+  }
+}
