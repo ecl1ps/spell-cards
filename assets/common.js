@@ -99,6 +99,29 @@ $(document).ready(function () {
     val = val.toFixed(2);
     setPadding(val);
   });
+
+  function restoreIcon(iconPos) {
+    const icon = getCookie("ci-" + iconPos);
+    if (!icon) {
+      return;
+    }
+    $(".card .body .line ." + iconPos)
+      .removeClass()
+      .addClass(icon)
+      .addClass(iconPos)
+      .text("");
+
+    $("#" + iconPos)
+      .removeClass()
+      .addClass(icon)
+      .addClass("icon")
+      .text("")
+      .attr("title", icon.replace("rpg-Icon", ""));
+  }
+
+  restoreIcon("icon-top");
+  restoreIcon("icon");
+  restoreIcon("icon-bot");
 });
 
 setPadding = function (val) {
@@ -135,14 +158,7 @@ toggleSpellbook = function () {
     if (url.indexOf("?") > 0) {
       prefix = "&";
     }
-    url2 =
-      location.href
-        .replace("?joesterMode", "")
-        .replace("&joesterMode", "")
-        .replace("?4a4", "")
-        .replace("&4a4", "") +
-      prefix +
-      "spellbook";
+    url2 = location.href.replace("?joesterMode", "").replace("&joesterMode", "").replace("?4a4", "").replace("&4a4", "") + prefix + "spellbook";
     url2 = url2.replace("/&", "/?");
     url2 = url2.replace("?scrolls&spellbook", "?scrolls");
   }
@@ -167,11 +183,7 @@ toggleJoester = function () {
     if (url.indexOf("&") > 0) {
       prefix = "&";
     }
-    url = url
-      .replace("?spellbook", "")
-      .replace("&spellbook", "")
-      .replace("?4a4", "")
-      .replace("&4a4", "");
+    url = url.replace("?spellbook", "").replace("&spellbook", "").replace("?4a4", "").replace("&4a4", "");
     url2 = url.replace(prefix + "joesterMode", "");
     url2 = url2.replace("/&", "/?");
     location.href = url2;
@@ -179,14 +191,7 @@ toggleJoester = function () {
     if (url.indexOf("?") > 0) {
       prefix = "&";
     }
-    url2 =
-      location.href
-        .replace("?spellbook", "")
-        .replace("&spellbook", "")
-        .replace("?4a4", "")
-        .replace("&4a4", "") +
-      prefix +
-      "joesterMode";
+    url2 = location.href.replace("?spellbook", "").replace("&spellbook", "").replace("?4a4", "").replace("&4a4", "") + prefix + "joesterMode";
     url2 = url2.replace("/&", "/?");
     location.href = url2;
   }
@@ -200,11 +205,7 @@ toggle4a4 = function () {
     if (url.indexOf("&") > 0) {
       prefix = "&";
     }
-    url = url
-      .replace("?spellbook", "")
-      .replace("&spellbook", "")
-      .replace("?joesterMode", "")
-      .replace("&joesterMode", "");
+    url = url.replace("?spellbook", "").replace("&spellbook", "").replace("?joesterMode", "").replace("&joesterMode", "");
     url2 = url.replace(prefix + "4a4", "");
     url2 = url2.replace("/&", "/?");
     location.href = url2;
@@ -212,14 +213,7 @@ toggle4a4 = function () {
     if (url.indexOf("?") > 0) {
       prefix = "&";
     }
-    url2 =
-      location.href
-        .replace("?spellbook", "")
-        .replace("&spellbook", "")
-        .replace("?joesterMode", "")
-        .replace("&joesterMode", "") +
-      prefix +
-      "4a4";
+    url2 = location.href.replace("?spellbook", "").replace("&spellbook", "").replace("?joesterMode", "").replace("&joesterMode", "") + prefix + "4a4";
     url2 = url2.replace("/&", "/?");
     location.href = url2;
   }
@@ -261,12 +255,6 @@ function setCookie(name, value, options) {
 
 // возвращает cookie с именем name, если есть, если нет, то undefined
 function getCookie(name) {
-  var matches = document.cookie.match(
-    new RegExp(
-      "(?:^|; )" +
-        name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, "\\$1") +
-        "=([^;]*)"
-    )
-  );
+  var matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, "\\$1") + "=([^;]*)"));
   return matches ? decodeURIComponent(matches[1]) : undefined;
 }
