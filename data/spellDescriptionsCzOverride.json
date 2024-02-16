@@ -1,0 +1,13 @@
+﻿{
+  "vábnička blesků": [
+    "<p>Vytvoříš zášleh bleskové energie, který zasáhne jednoho tvora v dosahu dle tvé volby, kterého ho vidíš. Cíl musí uspět v záchranném hodu na Sílu, jinak je přitažen v přímce k tobě až o 2 sáhy a pokud skončí do 1 sáhu od tebe, utrpí bleskové zranění 1k8.</p>",
+    "<p>Zranění tohoto kouzla se zvýší o 1k8, když dosáhneš 5. úrovně (2k8), 11. úrovně (3k8) a 17. úrovně (4k8).</p>"
+  ],
+  "vedení": [
+    "Dotkneš se jednoho tvora, který s tím souhlasí. Než kouzlo skončí, cíl si může hodit k4 a přičíst si hozené číslo k jednomu Ověření Schopnosti dle své volby. Touto kostkou si může hodit před Ověřením Schopnosti, nebo až po něm. Kouzlo poté skončí."
+  ],
+  "lovcova marka": [
+    "Zvolíš tvora, kterého vidíš v dosahu, a mysticky ho označíš jako svou kořist. Dokud kouzlo neskončí, způsobíš cíli dodatečné zranění 1k6, kdykoliv ho zasáhneš útokem zbraní, a když ho hledáš, máš výhodu k ověřením Moudrosti (Vnímání) či Moudrosti (Přežití). Pokud životy cíle klesnou na 0, než toto kouzlo skončí, můžeš ve svém pozdějším tahu použít bonusovou akci k označení nového tvora.",
+    "<strong>Na vyšších úrovních.</strong> Sešleš-li toto kouzlo použitím pozice kouzla 3. či 4. úrovně, můžeš se na něj soustředit až 8 hodin. Sešleš-li toto kouzlo použitím pozice kouzla 5. či vyšší úrovně, můžeš se na něj soustředit až 24 hodin."
+  ]
+}

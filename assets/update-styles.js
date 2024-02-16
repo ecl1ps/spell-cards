@@ -54,6 +54,11 @@
     .card.cardBlock .status li em {
         color: black !important;
     }
+    .card .class.srclass {
+        background-color: ${classColors.background};
+        z-index: 1;
+        padding-right: 3px;
+    }
     .name-first {
         grid-area: name1;
         font-size: 14px;

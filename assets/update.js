@@ -1,6 +1,7 @@
 (async () => {
   const spellNameEnFix = {
     "geas [obligation or prohibition]": "geas",
+    "bigby's hand (appears as a tentacle)": "bigby's hand",
   };
 
   const spellNameCzFix = {
@@ -16,10 +17,16 @@
       ...(await (await fetch("./data/spellNamesCzOverrides.json")).json()),
     }).map(([en, cz]) => [en, spellNameCzFix[cz] ?? cz])
   );
-  const spellDescriptions = Object.entries(spellNameCzFix).reduce((acc, [bad, good]) => {
-    acc[good] = acc[bad];
-    return acc;
-  }, await (await fetch("./data/spellDescriptionsCzGrimoire.json")).json());
+  const spellDescriptions = Object.entries(spellNameCzFix).reduce(
+    (acc, [bad, good]) => {
+      acc[good] = acc[bad];
+      return acc;
+    },
+    {
+      ...(await (await fetch("./data/spellDescriptionsCzGrimoire.json")).json()),
+      ...(await (await fetch("./data/spellDescriptionsCzOverride.json")).json()),
+    }
+  );
 
   const spellIngredients = Object.entries(spellNameCzFix).reduce((acc, [bad, good]) => {
     acc[good] = acc[bad];
@@ -63,14 +70,22 @@
         }),
     },
     {
-      regex: /^(Artificer|Cleric|Ranger|Sorcerer|Warlock|Wizard)\s+(\((\w+)\)\s+)?\(.+\)$/,
+      regex: /^(Artificer|Cleric|Ranger|Sorcerer|Warlock|Wizard|Druid|Paladin|Bard)\s*(\((\w+|\*)\)\s*)?(\((\w+|\*)\)\s*)?\((.+)\)/,
       replacer: (text) =>
-        text.replace(/^(Artificer|Cleric|Ranger|Sorcerer|Warlock|Wizard)\s+(\((\w+)\)\s+)?\((.+)\)$/, (matched, clazz, _, subclass, expansion) => {
-          if (subclass) {
-            return `${translations[clazz]} (${translations[subclass] ?? subclass}) (${translations[expansion] ?? expansion})`;
+        text.replace(
+          /^(Artificer|Cleric|Ranger|Sorcerer|Warlock|Wizard|Druid|Paladin|Bard)\s*(\((\w+|\*)\)\s*)?(\((\w+|\*)\)\s*)?\((.+)\)/,
+          (matched, clazz, _, type1, __, type2, type3) => {
+            if (type1 && type2) {
+              return `${translations[clazz] ?? clazz} (${translations[type1] ?? type1})(${translations[type2] ?? type2})(${
+                translations[type3] ?? type3
+              })`;
+            }
+            if (type1) {
+              return `${translations[clazz] ?? clazz} (${translations[type1] ?? type1})(${translations[type3] ?? type3})`;
+            }
+            return `${translations[clazz] ?? clazz} (${translations[type3] ?? type3})`;
           }
-          return `${translations[clazz]} (${translations[expansion] ?? expansion})`;
-        }),
+        ),
     },
   ];
 
