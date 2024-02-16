@@ -1,23 +1,71 @@
 ﻿{
-  "wizard": {
+  "artificer": {
+    "header": "#e78223d1",
+    "backface": "#ab611c",
+    "separator": "#888",
     "background": "#555",
-    "separator": "#555",
-    "header": "rgb(166 145 255)",
-    "backface": "rgb(45 0 200)",
     "backSymbols": "#222"
   },
-  "artificer": {
-    "background": "#555",
+  "wizard": {
+    "header": "#6a6af5a8",
+    "backface": "#2c2cc2",
     "separator": "#888",
+    "background": "#555",
+    "backSymbols": "#222",
+    "backfaceBorder": "#2c2cc2c4"
+  },
+  "cleric": {
     "header": "goldenrod",
     "backface": "darkgoldenrod",
+    "separator": "#888",
+    "background": "#555",
     "backSymbols": "#222"
   },
   "bard": {
-    "background": "#8c5385",
-    "separator": "#8c5385",
-    "header": "#d9b5d9",
-    "backface": "#8c5385",
+    "header": "#dc64de9c",
+    "backface": "#b86daf",
+    "separator": "#888",
+    "background": "#555",
+    "backSymbols": "#222",
+    "backfaceBorder": "#b46cab"
+  },
+  "warlock": {
+    "header": "#b44effc4",
+    "backface": "#5f1c8a",
+    "separator": "#888",
+    "background": "#555",
+    "backSymbols": "#222",
+    "backfaceBorder": "#a640e7"
+  },
+  "paladin": {
+    "header": "#cdcdcd",
+    "backface": "#605d5d",
+    "separator": "#888",
+    "background": "#555",
+    "backSymbols": "#222",
+    "backfaceBorder": "#9e9e9e"
+  },
+  "sorcerer": {
+    "header": "#f7151494",
+    "backface": "#b11716",
+    "separator": "#888",
+    "background": "#555",
+    "backSymbols": "#222",
+    "backfaceBorder": "#b11716b0"
+  },
+  "druid": {
+    "header": "#5bbd165e",
+    "backface": "#315802",
+    "separator": "#888",
+    "background": "#555",
+    "backSymbols": "#222",
+    "backfaceBorder": "#4f8d04"
+  },
+  "ranger": {
+    "header": "#7ca34c",
+    "backface": "#2b4906",
+    "separator": "#888",
+    "background": "#555",
     "backSymbols": "#222"
   }
 }
