@@ -224,6 +224,10 @@ flip = function () {
   $(".cardBlock").toggleClass("flipped");
 };
 
+function getClassName() {
+  return location.pathname.split("/").at(-1).split(".").at(0);
+}
+
 function setCookie(name, value, options) {
   options = options || {};
 
@@ -240,7 +244,7 @@ function setCookie(name, value, options) {
 
   value = encodeURIComponent(value);
 
-  var updatedCookie = name + "=" + value;
+  var updatedCookie = getClassName() + "-" + name + "=" + value;
 
   for (var propName in options) {
     updatedCookie += "; " + propName;
@@ -253,8 +257,9 @@ function setCookie(name, value, options) {
   document.cookie = updatedCookie;
 }
 
-// возвращает cookie с именем name, если есть, если нет, то undefined
 function getCookie(name) {
-  var matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, "\\$1") + "=([^;]*)"));
+  var matches = document.cookie.match(
+    new RegExp("(?:^|; )" + getClassName() + "-" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, "\\$1") + "=([^;]*)")
+  );
   return matches ? decodeURIComponent(matches[1]) : undefined;
 }
