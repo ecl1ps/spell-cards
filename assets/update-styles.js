@@ -9,6 +9,11 @@
     const style = document.createElement("style");
     style.id = "style-override";
     style.innerHTML = `
+    #print-mode {
+        margin: 16px 0;
+        font-size: small;
+    }
+
     /*.card-left { display: none;} 
     .card-right { display: block; }*/
     .print-button {

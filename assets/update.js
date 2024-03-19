@@ -252,9 +252,49 @@
     });
   }
 
+  function togglePrintPreview() {
+    const cardList = document.querySelector(".cardlist");
+
+    const br = document.querySelector(".cardlist > br");
+    const separator = document.querySelector(".cardlist > .separator");
+    document.querySelectorAll(".cardlist > br, .cardlist > .separator, .card:not(.select)").forEach((e) => e.remove());
+
+    const selectedCardsLeft = [...document.querySelectorAll(".card.card-left.select")];
+    const selectedCardsRight = [...document.querySelectorAll(".card.card-right.select")];
+
+    document.querySelectorAll(".card.select").forEach((e) => e.remove());
+
+    const pageCount = Math.ceil(selectedCardsLeft.length / 9);
+
+    for (let pageIndex = 0; pageIndex < pageCount; pageIndex++) {
+      const maxCardIndexOnPage = Math.min((pageIndex + 1) * 9, selectedCardsLeft.length);
+      const isLastPage = pageIndex + 1 == pageCount;
+
+      for (let cardIndex = pageIndex * 9; cardIndex < maxCardIndexOnPage; cardIndex++) {
+        cardList.insertAdjacentElement("beforeend", selectedCardsLeft[cardIndex]);
+      }
+
+      cardList.insertAdjacentElement("beforeend", br.cloneNode());
+      cardList.insertAdjacentElement("beforeend", separator.cloneNode(true));
+
+      for (let cardIndex = pageIndex * 9; cardIndex < maxCardIndexOnPage; cardIndex++) {
+        cardList.insertAdjacentElement("beforeend", selectedCardsRight[cardIndex]);
+      }
+      cardList.insertAdjacentElement("beforeend", br.cloneNode());
+      if (!isLastPage) {
+        cardList.insertAdjacentElement("beforeend", separator.cloneNode(true));
+      }
+    }
+  }
+
+  function addPrintPreview() {
+    document.querySelector("#print-mode").addEventListener("click", togglePrintPreview);
+  }
+
   translateNameAndRebuildHeader();
   translateMiscTexts();
   translatedIngredients();
   translatedDescriptionAndResize();
   fixBackSidesWhenSelectingSpecific();
+  addPrintPreview();
 })();
