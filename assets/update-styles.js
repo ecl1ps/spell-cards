@@ -9,6 +9,13 @@
     const style = document.createElement("style");
     style.id = "style-override";
     style.innerHTML = `
+    :root {
+        --color-background: ${classColors.background};
+        --color-header: ${classColors.header};
+        --color-backface: ${classColors.backface};
+        --color-backface-border: ${classColors.backfaceBorder ?? classColors.backface};
+        --color-backface-symbols: ${classColors.backSymbols};
+    }
     #print-mode {
         margin: 16px 0;
         font-size: small;
@@ -35,32 +42,32 @@
         font-size: 9px;
     }
     .card.cardBlock, .card.cardBlock .need, .card, .card .need {
-        background-color: ${classColors.background};
+        background-color: var(--color-background);
     }
     .card .name.srname {
-        background-color: ${classColors.header};
+        background-color: var(--color-header);
     }
     .card.cardBlock .lined, .card.cardBlock .status li.second {
-        border-color: ${classColors.background};
+        border-color: var(--color-background);
     }
     @media print {
         .card.card-left, .card.card-right {
-            box-shadow: ${classColors.background} 0 3px 0px 3px !important
+            box-shadow: var(--color-background) 0 3px 0px 3px !important
         }
     }
     .card.cardBlock .backface .line, .card.cardBlock .b-lt, .card.cardBlock .b-rt, .card.cardBlock .b-lb, .card.cardBlock .b-rb, .cardBlock .body .b-lt:after, .cardBlock .body .b-rt:after, .cardBlock .body .b-lb:after, .cardBlock .body .b-rb:after, .cardBlock .body .b-lt:before, .cardBlock .body .b-rt:before, .cardBlock .body .b-lb:before, .cardBlock .body .b-rb:before {
-        color: ${classColors.backface} !important;
-        border-color: ${classColors.backfaceBorder ?? classColors.backface} !important;
+        color: var(--color-backface) !important;
+        border-color: var(--color-backface-border) !important;
     }
     .card.cardBlock .level-1, .card.cardBlock .level-2, .card.cardBlock .icon, .card.cardBlock .icon-bot, .card.cardBlock .icon-top {
-        color: ${classColors.backSymbols} !important;
-        border-color: ${classColors.backSymbols} !important;
+        color: var(--color-backface-symbols) !important;
+        border-color: var(--color-backface-symbols) !important;
     }    
     .card.cardBlock .status li em {
         color: black !important;
     }
     .card .class.srclass {
-        background-color: ${classColors.background};
+        background-color: var(--color-background);
         z-index: 1;
         padding-right: 3px;
     }
