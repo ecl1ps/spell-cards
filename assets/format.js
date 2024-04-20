@@ -77,19 +77,23 @@ const HIGHLIGHT_RULES = [
           )}`
       ),
   ],
+  [/(záchranném hodu|záchranný hod) na (Sílu|Obratnost|Odolnost|Inteligenci|Moudrost|Charismu|Charisma)/g, "strong"],
   [
     /Síly|Sílu|Obratnosti|Obratnost|Odolnosti|Odolnost|Inteligence|Inteligenci|Moudrosti|Moudrost|Charismatu|Charisma|Charismu/g,
     (matcher, text) => text.replaceAll(matcher, (ability) => wrapWithElement(ability, "strong", `class="ability ${ABILITY_TO_CLASS[ability]}"`)),
   ],
 
   [/\d{1,2}k\s?\d{1,2}( \+ \d+)?/g, "strong"],
-  [/([\d,]+ )?(sáhů|okamžitě|dnů|čtverec)/gi, "strong"], // word boundary doesn't respect characters outside a-Z
-  [/([\d,]+ )?\b(sáhu|sáhy|sáh|cm|km|akce|akci|kolo|kol|minutu|minuta|minuty|minut|hodina|hodinu|hodin|den|dny)\b/gi, "strong"],
-  [/\b(koule|kouli|přímka|přímce|úsečka|úsečce|krychle|krychli|paprsek|kruh|kuželu|kužel)\b/gi, "strong"],
+  [/([\d,]+ )?(sáhů|okamžitě|dnů|čtverec|(dlouhé|široké)? dráze|(dlouhou|širokou)? dráhu)/gi, "strong"], // word boundary doesn't respect characters outside a-Z
+  [/([\d,]+ )?\b(sáhu|sáhy|sáh|cm|km|akce|akci|kolo|kol|minutu|minuta|minuty|minut|hodina|hodinu|hodin|den|dny|dráhu)\b/gi, "strong"],
+  [/\b(krychli o (hraně|straně))/gi, "strong"], // word boundary doesn't respect characters outside a-Z
+  [
+    /\b(koule|kouli o poloměru|kouli|přímka|přímce|úsečka|úsečce|krychle|krychli o (hraně|straně)|krychli|paprsek|kruh|kuželu|kužele|kužel)\b/gi,
+    "strong",
+  ],
   [/(\+\d+ k )?OČ( \d+)?/g, "strong"],
   [/(jednomu )?tvoru v dosahu|(jednoho tvora|dva tvory) v dosahu|tvora v dosahu|vidíš v dosahu|v( rámci)? dosahu/gi, "strong"],
   [/útok na dálku|útok zbraní na blízko|dotknout|útok na blízko kouzlem|neutrpí|utrpí( poloviční zranění)?/g, "strong"],
-  [/(záchranném hodu|záchranný hod) na (Sílu|Obratnost|Odolnost|Inteligenci|Moudrost|Charismu|Charisma)/g, "strong"],
 ];
 
 function wrapWithElement(text, tag, attributes) {
