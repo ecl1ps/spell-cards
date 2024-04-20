@@ -29,21 +29,42 @@
   drtivého: "bludgeoning",
 };
 
+const ABILITY_TO_CLASS = {
+  Sílu: "strength",
+  Síly: "strength",
+  Obratnost: "dexterity",
+  Obratnosti: "dexterity",
+  Odolnost: "constitution",
+  Odolnosti: "constitution",
+  Inteligenci: "intelligence",
+  Inteligence: "intelligence",
+  Moudrost: "wisdom",
+  Moudrosti: "wisdom",
+  Charisma: "charisma",
+  Charismu: "charisma",
+  Charismatu: "charisma",
+};
+
 const HIGHLIGHT_RULES = [
   [
     /(hromové|kyselinové|ohnivé|psychické|bleskové|jedové|ledové|chladné|silové|zářivé|nekrotické|sečné|bodné|drtivé) zranění( \d{1,2}k\d{1,2}( \+ \d+)?)?/g,
     (matcher, text) =>
-      text.replaceAll(matcher, (phrase, damageType) => wrapWithElement(phrase, "span", `class="damage ${DAMAGE_TO_CLASS[damageType]}"`)),
+      text.replaceAll(matcher, (phrase, damageType) => wrapWithElement(phrase, "strong", `class="damage ${DAMAGE_TO_CLASS[damageType]}"`)),
   ],
   [
     /\d{1,2}k\d{1,2}( \+ \d+)? (hromového|kyselinového|ohnivého|psychického|bleskového|jedového|ledového|chladného|silového|zářivého|nekrotického|sečného|bodného|drtivého) zranění/g,
     (matcher, text) =>
-      text.replaceAll(matcher, (phrase, _, damageType) => wrapWithElement(phrase, "span", `class="damage ${DAMAGE_TO_CLASS[damageType]}"`)),
+      text.replaceAll(matcher, (phrase, _, damageType) => wrapWithElement(phrase, "strong", `class="damage ${DAMAGE_TO_CLASS[damageType]}"`)),
+  ],
+  [
+    /nevýhodou|nevýhodu|výhodou|výhodu/g,
+    (matcher, text) =>
+      text.replaceAll(matcher, (phrase) => wrapWithElement(phrase, "strong", `class="${phrase.startsWith("ne") ? "disadvantage" : "advantage"}"`)),
   ],
   [/\d{1,2}k\s?\d{1,2}/g, "strong"],
-  [/\d\. či vyšší úrovně/g, "strong"],
-  [/(útok na dálku|útok zbraní na blízko|dotknout|útok na blízko kouzlem)/g, "strong"],
-  [/(záchranném hodu|záchranný hod) na (Sílu|Obratnost|Odolnost|Inteligenci|Moudrost|Charismu)/g, "strong"],
+  [/útok na dálku|útok zbraní na blízko|dotknout|útok na blízko kouzlem|utrpí/g, "strong"],
+  [/(záchranném hodu|záchranný hod) na (Sílu|Obratnost|Odolnost|Inteligenci|Moudrost|Charismu|Charisma)/g, "strong"],
+  [/(ověření|ověřením)( tvého)? (Síly|Obratnosti|Odolnosti|Inteligence|Moudrosti|Charismatu)/g, "strong"],
   [
     /Zranění( tohoto)?( kouzla)?(, způsobené kouzlem,)? se zvýší .+\.$/,
     (matcher, text) =>
@@ -55,6 +76,10 @@ const HIGHLIGHT_RULES = [
             "em"
           )}`
       ),
+  ],
+  [
+    /Síly|Sílu|Obratnosti|Obratnost|Odolnosti|Odolnost|Inteligence|Inteligenci|Moudrosti|Moudrost|Charismatu|Charisma|Charismu/g,
+    (matcher, text) => text.replaceAll(matcher, (ability) => wrapWithElement(ability, "strong", `class="ability ${ABILITY_TO_CLASS[ability]}"`)),
   ],
 ];
 

@@ -125,43 +125,64 @@
     .card .text * {
         font-size: unset;
     }
-
-    .card .text .damage {
-        font-weight: bold;
-    }
-    .damage.thunder {
+    .card .text .damage.thunder {
         color: #673c8a;
     }
-    .damage.acid {
+    .card .text .damage.acid {
         color: #bbc00d;
     }
-    .damage.fire {
+    .card .text .damage.fire {
         color: #cf5605;
     }
-    .damage.psychic {
+    .card .text .damage.psychic {
         color: #b482a5;
     }
-    .damage.lightning {
+    .card .text .damage.lightning {
         color: #3d6dc1;
     }
-    .damage.poison {
+    .card .text .damage.poison {
         color: #a6c505;
     }
-    .damage.frost {
+    .card .text .damage.frost {
         color: #65abb1;
     }
-    .damage.force {
+    .card .text .damage.force {
         color: #9e1c20;
     }
-    .damage.radiant {
+    .card .text .damage.radiant {
         color: #b98c07;
     }
-    .damage.necrotic {
+    .card .text .damage.necrotic {
         color: #7eb461;
     }
-    .damage.slashing, .damage.piercing, .damage.bludgeoning {
+    .card .text .damage.slashing, .damage.piercing, .damage.bludgeoning {
         color: #7a7877;
     }
+    .card .text .advantage {
+        color: #64c36a;
+    }
+    .card .text .disadvantage, .card .text .disadvantage * {
+        color: #ef8686;
+    }
+
+    .card .text .ability.strength {
+        color: red;
+    }
+    .card .text .ability.dexterity {
+        color: green;
+    }
+    .card .text .ability.constitution {
+        color: orange;
+    }
+    .card .text .ability.intelligence {
+        color: blue;
+    }
+    .card .text .ability.wisdom {
+        color: yellow;
+    }
+    .card .text .ability.charisma {
+        color: purple;
+    }    
     `;
 
     document.getElementById("style-override")?.remove();
