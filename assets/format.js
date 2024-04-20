@@ -46,6 +46,7 @@ const ABILITY_TO_CLASS = {
 };
 
 const HIGHLIGHT_RULES = [
+  [/\d{1,2}k\s?\d{1,2}( \+ \d+)?/g, "strong"],
   [
     /(hromové|kyselinové|ohnivé|psychické|bleskové|jedové|ledové|chladné|silové|zářivé|nekrotické|sečné|bodné|drtivé) zranění( \d{1,2}k\d{1,2}( \+ \d+)?)?/g,
     (matcher, text) =>
@@ -82,8 +83,6 @@ const HIGHLIGHT_RULES = [
     /Síly|Sílu|Obratnosti|Obratnost|Odolnosti|Odolnost|Inteligence|Inteligenci|Moudrosti|Moudrost|Charismatu|Charisma|Charismu/g,
     (matcher, text) => text.replaceAll(matcher, (ability) => wrapWithElement(ability, "strong", `class="ability ${ABILITY_TO_CLASS[ability]}"`)),
   ],
-
-  [/\d{1,2}k\s?\d{1,2}( \+ \d+)?/g, "strong"],
   [/([\d,]+ )?(sáhů|okamžitě|dnů|čtverec|(dlouhé|široké)? dráze|(dlouhou|širokou)? dráhu)/gi, "strong"], // word boundary doesn't respect characters outside a-Z
   [/([\d,]+ )?\b(sáhu|sáhy|sáh|cm|km|akce|akci|kolo|kol|minutu|minuta|minuty|minut|hodina|hodinu|hodin|den|dny|dráhu)\b/gi, "strong"],
   [/\b(krychli o (hraně|straně))/gi, "strong"], // word boundary doesn't respect characters outside a-Z
