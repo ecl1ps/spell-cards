@@ -159,7 +159,7 @@
         color: #7a7877;
     }
     .card .text .advantage {
-        color: #64c36a;
+        color: #45a04b;
     }
     .card .text .disadvantage, .card .text .disadvantage * {
         color: #ef8686;
@@ -178,7 +178,7 @@
         color: blue;
     }
     .card .text .ability.wisdom {
-        color: yellow;
+        color: #b0b015;
     }
     .card .text .ability.charisma {
         color: purple;

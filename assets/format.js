@@ -61,10 +61,10 @@ const HIGHLIGHT_RULES = [
     (matcher, text) =>
       text.replaceAll(matcher, (phrase) => wrapWithElement(phrase, "strong", `class="${phrase.startsWith("ne") ? "disadvantage" : "advantage"}"`)),
   ],
-  [/\d{1,2}k\s?\d{1,2}/g, "strong"],
-  [/útok na dálku|útok zbraní na blízko|dotknout|útok na blízko kouzlem|utrpí/g, "strong"],
-  [/(záchranném hodu|záchranný hod) na (Sílu|Obratnost|Odolnost|Inteligenci|Moudrost|Charismu|Charisma)/g, "strong"],
-  [/(ověření|ověřením)( tvého)? (Síly|Obratnosti|Odolnosti|Inteligence|Moudrosti|Charismatu)/g, "strong"],
+  [
+    /(ověření|ověřením)( tvého)? (Síly|Obratnosti|Odolnosti|Inteligence|Moudrosti|Charismatu)( \([ěščřžýáíéóúůďťňĎŇŤŠČŘŽÝÁÍÉÚŮĚÓa-zA-Z]+\))?/g,
+    "strong",
+  ],
   [
     /Zranění( tohoto)?( kouzla)?(, způsobené kouzlem,)? se zvýší .+\.$/,
     (matcher, text) =>
@@ -81,6 +81,15 @@ const HIGHLIGHT_RULES = [
     /Síly|Sílu|Obratnosti|Obratnost|Odolnosti|Odolnost|Inteligence|Inteligenci|Moudrosti|Moudrost|Charismatu|Charisma|Charismu/g,
     (matcher, text) => text.replaceAll(matcher, (ability) => wrapWithElement(ability, "strong", `class="ability ${ABILITY_TO_CLASS[ability]}"`)),
   ],
+
+  [/\d{1,2}k\s?\d{1,2}( \+ \d+)?/g, "strong"],
+  [/([\d,]+ )?(sáhů|okamžitě|dnů|čtverec)/gi, "strong"], // word boundary doesn't respect characters outside a-Z
+  [/([\d,]+ )?\b(sáhu|sáhy|sáh|cm|km|akce|akci|kolo|kol|minutu|minuta|minuty|minut|hodina|hodinu|hodin|den|dny)\b/gi, "strong"],
+  [/\b(koule|kouli|přímka|přímce|úsečka|úsečce|krychle|krychli|paprsek|kruh|kuželu|kužel)\b/gi, "strong"],
+  [/(\+\d+ k )?OČ( \d+)?/g, "strong"],
+  [/(jednomu )?tvoru v dosahu|(jednoho tvora|dva tvory) v dosahu|tvora v dosahu|vidíš v dosahu|v( rámci)? dosahu/gi, "strong"],
+  [/útok na dálku|útok zbraní na blízko|dotknout|útok na blízko kouzlem|neutrpí|utrpí( poloviční zranění)?/g, "strong"],
+  [/(záchranném hodu|záchranný hod) na (Sílu|Obratnost|Odolnost|Inteligenci|Moudrost|Charismu|Charisma)/g, "strong"],
 ];
 
 function wrapWithElement(text, tag, attributes) {
