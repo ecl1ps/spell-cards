@@ -1,6 +1,7 @@
 // @ts-check
 const { test, expect } = require("@playwright/test");
 const { writeFile } = require("node:fs/promises");
+const artificerSpells = require("./artificer-spells.json");
 
 test("extract czech spell data", async ({ page }) => {
   await page.goto("https://dnd5esrd.d20.cz/grimoar/grimoar-moci.html");
@@ -136,9 +137,19 @@ test("extract czech spell data", async ({ page }) => {
     return spells;
   });
 
-  await writeFile("./public/spells.json", JSON.stringify(data, null, 2));
+  const fixedData = fixData(data);
 
-  console.log(`Scraped ${data.length} spells`);
+  await writeFile("./public/spells.json", JSON.stringify(fixedData, null, 2));
 
-  expect(data.length).toBeGreaterThan(0);
+  console.log(`Scraped ${fixedData.length} spells`);
+
+  expect(fixedData.length).toBeGreaterThan(0);
 });
+
+function fixData(data) {
+  return data.map((spell) => ({
+    ...spell,
+    classes:
+      artificerSpells.includes(spell.name.toLowerCase()) && !spell.classes.includes("divutepec") ? [...spell.classes, "divutepec"] : spell.classes,
+  }));
+}

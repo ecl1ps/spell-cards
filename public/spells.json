@@ -16,7 +16,8 @@
     "classes": [
       "čaroděj",
       "černokněžník",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Jako součást akce, když sesíláš toto kouzlo, musíš provést útok zbraní na blízko proti jednomu tvoru v dosahu kouzla, jinak kouzlo selže. Když zasáhneš, tak cíl utrpí normální účinek útoku a přeskočí od něj zelený oheň na jiného tvora dle tvého výběru, kterého vidíš a který je do 1 sáhu od cíle. Druhý tvor utrpí ohnivé zranění rovné tvé opravě sesílací vlastnosti.</p>",
@@ -201,7 +202,8 @@
     "classes": [
       "čaroděj",
       "černokněžník",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Jako součást akce, když sesíláš toto kouzlo, musíš provést útok zbraní na blízko proti jednomu tvoru v dosahu kouzla, jinak kouzlo selže. Když zasáhneš, tak cíl utrpí normální účinek útoku a až do začátku tvého příštího tahu je zahalen do dunící energie. Pokud se předtím cíl dobrovolně pohne, tak okamžitě utrpí hromové zranění 1k8 a kouzlo skončí.</p>",
@@ -291,7 +293,8 @@
       "čaroděj",
       "černokněžník",
       "druid",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Natáhneš svou ruku směrem k tvorovi, kterého vidíš v dosahu, a vypustíš ze své dlaně oblak zhoubného plynu. Tvor musí uspět v záchranném hodu na Odolnost, jinak utrpí jedové zranění 1k12.</p>",
@@ -315,7 +318,8 @@
       "bard",
       "čaroděj",
       "černokněžník",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Toto kouzlo je drobný magický trik, který používají k procvičování adepti sesílání kouzel. V rámci dosahu vytvoříš jeden z následujících účinků.</p>",
@@ -363,7 +367,8 @@
     "duration": "1 minuta",
     "classes": [
       "černokněžník",
-      "druid"
+      "druid",
+      "divutepec"
     ],
     "description": [
       "<p>Dotkneš se až tří oblázků a naplníš je magií. Buď ty, nebo někdo jiný s nimi může provést útok kouzlem na dálku tím, že je hodí, nebo vystřelí prakem. Pokud se jimi hází, oblázky mají dostřel 12 sáhů. Pokud s nimi útočí někdo jiný než ty, přičítá si k útoku tvou opravu sesílací vlastnosti, a ne svoji. Při zásahu oblázek způsobí drtivé zranění rovné 1k6 + tvá oprava sesílací vlastnosti. Ať už útok oblázkem trefí, nebo mine, kouzlo z oblázku ihned poté vyprchá.</p>",
@@ -385,7 +390,8 @@
     "duration": "Ihned",
     "classes": [
       "čaroděj",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Mrštíš bublinou kyseliny. Zvol buď jednoho tvora v dosahu, nebo dva tvory v dosahu, kteří jsou navzájem do 1 sáhu od sebe. Cíl musí uspět v záchranném hodu na Obratnost, jinak utrpí kyselinové zranění 1k6.</p>",
@@ -409,7 +415,8 @@
       "bard",
       "čaroděj",
       "černokněžník",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Přízračná, levitující ruka se objeví v bodě, který zvolíš v dosahu. Vydrží po dobu trvání, nebo dokud ji nezrušíš jako akci. Octne-li se dál než 6 sáhů od tebe, nebo sešleš-li toto kouzlo znovu, tak zmizí.</p>",
@@ -503,7 +510,8 @@
     "duration": "Ihned",
     "classes": [
       "čaroděj",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Směrem k tvorovi v dosahu vyšlehne chladný paprsek modrobílého světla. Hoď si na útok na dálku kouzlem proti cíli. Při zásahu cíl utrpí chladné zranění 1k8 a jeho rychlost se sníží o 2 sáhy do začátku tvého příštího tahu.</p>",
@@ -550,7 +558,8 @@
     "duration": "Soustředění, až 1 minuta",
     "classes": [
       "druid",
-      "klerik"
+      "klerik",
+      "divutepec"
     ],
     "description": [
       "<p>Dotkneš se jednoho tvora, který s tím souhlasí. Než kouzlo skončí, cíl si může hodit k4 a přičíst si hozené číslo k jednomu záchrannému hodu dle své volby. Touto kostkou si může hodit před záchranným hodem, nebo až po něm. Kouzlo poté skončí.</p>"
@@ -594,7 +603,8 @@
     "duration": "Ihned",
     "classes": [
       "čaroděj",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Na tvora či předmět v dosahu vrhneš smítko ohně. Hoď si na útok na dálku kouzlem proti cíli. Když zasáhneš, utrpí cíl ohnivé zranění 1k10. Hořlavé předměty zasažené tímto kouzlem se zapálí, pokud je nikdo nedrží ani nenese.</p>",
@@ -618,7 +628,8 @@
       "čaroděj",
       "černokněžník",
       "druid",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Způsobíš, že se na tvorovi, kterého vidíš v dosahu, začnou tvořit otupující omrzliny. Tvor musí uspět v záchranném hodu na Odolnost. Při neúspěchu utrpí 1k6 chladného zranění a má nevýhodu k dalšímu útoku, který udělá před koncem svého dalšího kola.</p>",
@@ -645,7 +656,8 @@
       "čaroděj",
       "druid",
       "klerik",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Toto kouzlo opraví jeden rozbitý, zlomený či roztržený předmět, kterého se dotkneš, například roztržený článek řetězu, dvě půlky zlomeného klíče, roztržený plášť nebo prosakující měch na víno. Pokud není zlom nebo trhlina v žádném svém rozměru větší než 1 stopa, předmět se opraví a neponese žádnou stopu po dřívějším poškození.</p>",
@@ -851,7 +863,8 @@
       "čaroděj",
       "černokněžník",
       "druid",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Na místě, jež vidíš, necháš vyšlehnout táborák, který zaplní krychli o hraně 1 sáhu. Každý tvor, který se v ovlivněné oblasti nachází, poprvé do ní během svého tahu vstoupí, nebo v ní zakončí svůj tah, musí uspět v záchranném hodu na Obratnost, jinak utrpí 1k8 ohnivého zranění. Táborák podpálí všechny hořlavé předměty v ovlivněné oblasti, které nikdo nenese ani nedrží.</p>",
@@ -898,7 +911,8 @@
       "bard",
       "čaroděj",
       "klerik",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Dotkneš se jednoho předmětu, který v žádném rozměru není větší než 2 sáhy. Dokud kouzlo neskončí, předmět osvítí jasným světlem okruh o poloměru 4 sáhy a dalších 4 sáhy dosvítí slabým světlem. Světlo může být zbarvené, jak chceš. Úplné zakrytí daného předmětu něčím neprůsvitným blokuje světlo. Kouzlo skončí předčasně, pokud ho sešleš znovu, nebo ho ukončíš jako akci.</p>",
@@ -944,7 +958,8 @@
     "duration": "Ihned",
     "classes": [
       "čaroděj",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Z tvé ruky vyšlehne blesk, aby způsobil šok tvorovi, kterého se pokusíš dotknout. Hoď si na útok na blízko kouzlem proti cíli. Pokud má cíl na sobě kovovou zbroj, máš výhodu k hodu na útok. Při zásahu cíl utrpí bleskové zranění 1k8 a nemůže reagovat do začátku svého příštího tahu.</p>",
@@ -990,7 +1005,8 @@
     "classes": [
       "bard",
       "čaroděj",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>V dosahu vytvoříš až čtyři světla o velikosti pochodně, která vypadají jako pochodně, lucerny nebo svítící koule, jež se vznáší ve vzduchu po dobu trvání. Můžeš také zkombinovat čtyři světla do jednoho svítícího, neurčitého humanoidního těla Střední velikosti. Ať zvolíš jakoukoliv formu, každé světlo slabě osvítí okruh o poloměru 2 sáhy.</p>",
@@ -1038,7 +1054,8 @@
     "ingredients": "stonek rostliny s trny",
     "duration": "Ihned",
     "classes": [
-      "druid"
+      "druid",
+      "divutepec"
     ],
     "description": [
       "<p>Vytvoříš dlouhý bič podobný úponku rostliny s trny, který na tvůj povel šlehne tvora v dosahu. Hoď si na útok na blízko kouzlem proti cíli. Pokud útok zasáhne, cíl utrpí bodné zranění 1k6 a je-li Velký nebo menší, přitáhneš ho o 2 sáhy blíž k tobě.</p>",
@@ -1105,7 +1122,8 @@
     ],
     "duration": "Ihned",
     "classes": [
-      "klerik"
+      "klerik",
+      "divutepec"
     ],
     "description": [
       "<p>Dotkneš se živého tvora, který má 0 životů. Tvor se stabilizuje. Toto kouzlo nijak nepůsobí na nemrtvé ani výtvory.</p>"
@@ -1146,7 +1164,8 @@
     "classes": [
       "čaroděj",
       "černokněžník",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Vytvoříš zášleh bleskové energie, který zasáhne jednoho tvora v dosahu dle tvé volby, kterého ho vidíš. Cíl musí uspět v záchranném hodu na Sílu, jinak je přitažen v přímce k tobě až o 2 sáhy a pokud skončí do 1 sáhu od tebe, utrpí bleskové zranění 1k8.</p>",
@@ -1210,7 +1229,8 @@
     "classes": [
       "čaroděj",
       "černokněžník",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Vytvoříš chvilkový kruh přízračných čepelí, které kolem tebe sekají. Každý v dosahu, kromě tebe, musí uspět v záchranném hodu na Obratnost, jinak utrpí silové zranění 1k6.</p>",
@@ -1234,7 +1254,8 @@
       "čaroděj",
       "černokněžník",
       "druid",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Způsobíš, že krátce, ale silně zahřmí. Zvuk hromu je slyšet až 20 sáhů daleko a každý tvor v dosahu, mimo tebe, si musí hodit záchranný hod na Odolnost, jinak utrpí 1k6 hromového zranění.</p>",
@@ -1351,7 +1372,8 @@
     "classes": [
       "bard",
       "čaroděj",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Ukážeš svým prstem na tvora v dosahu a zašeptáš zprávu. Cíl (a pouze on) uslyší zprávu a může odpovědět zašeptáním, které uslyšíš pouze ty.</p>",
@@ -1398,7 +1420,8 @@
     "ingredients": "stříbrné zrcátko",
     "duration": "1 minuta",
     "classes": [
-      "klerik"
+      "klerik",
+      "divutepec"
     ],
     "description": [
       "<p>Strážíš před útokem tvora v dosahu. Dokud kouzlo neskončí, tak každý, kdo zacílí stráženého tvora útokem nebo zraňujícím kouzlem, si musí nejprve hodit záchranný hod na Moudrost. Když neuspěje, musí vybrat nový cíl, jinak přijde o svůj útok nebo kouzlo. Toto kouzlo nechrání stráženého tvora před plošnými účinky, například výbuchem ohnivé koule.</p>",
@@ -1519,7 +1542,8 @@
       "bard",
       "druid",
       "hraničář",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Dotkneš se tvora. Rychlost tvora se zvýší o 2 sáhy, dokud kouzlo neskončí.</p>",
@@ -1588,7 +1612,8 @@
     "duration": "1 hodina",
     "classes": [
       "čaroděj",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Posílíš se nekromantickou napodobeninou života. Po dobu trvání získáš 1k4 + 4 dočasných životů.</p>",
@@ -1707,7 +1732,8 @@
     "duration": "Soustředění, až 1 minuta",
     "classes": [
       "bard",
-      "paladin"
+      "paladin",
+      "divutepec"
     ],
     "description": [
       "<p>Tvor, kterého se dotkneš a který s tím souhlasí, je naplněn statečností. Dokud kouzlo neskončí, je tvor imunní vůči vystrašení a získá dočasné životy rovné tvé opravě sesílací vlastnosti na začátku každého svého tahu. Když kouzlo skončí, cíl ztratí zbývající dočasné životy z tohoto kouzla.</p>",
@@ -1731,7 +1757,8 @@
       "bard",
       "čaroděj",
       "druid",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Vyjde z tebe vlna hromové síly. Každý tvor v krychli 3 sáhy vycházející z tebe si musí hodit záchranný hod na Odolnost. Když tvor neuspěje, utrpí hromové zranění 2k8 a je odtlačen 2 sáhy od tebe. Když uspěje, utrpí poloviční zranění a není odtlačen.</p>",
@@ -1821,7 +1848,8 @@
     "duration": "Ihned",
     "classes": [
       "čaroděj",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Zvolíš si objekt, vážící mezi 1 a 5 librami, který se nachází v dosahu kouzla a který nikdo nedrží ani nenese. Objekt se vymrští a letí přímou čarou 18 sáhů, než spadne na zem, nebo jej předčasně zastaví náraz do pevného objektu. Je-li vymrštěným objektem zasažen tvor, musí provést záchranný hod na Obratnost. Pokud neuspěje, objekt jej zasáhl. Při zásahu utrpí cíl i objekt shodně 3k8 drtivého zranění.</p>",
@@ -1888,7 +1916,8 @@
     "classes": [
       "bard",
       "druid",
-      "klerik"
+      "klerik",
+      "divutepec"
     ],
     "description": [
       "<p>Tvor dle tvé volby, kterého vidíš v dosahu, si obnoví životy rovné 1k4 + tvá oprava sesílací vlastnosti. Toto kouzlo nijak nepůsobí na nemrtvé ani výtvory.</p>",
@@ -1954,7 +1983,8 @@
     "duration": "Ihned",
     "classes": [
       "čaroděj",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Vytvoříš tři světélkující šipky tvořené magickou silou. Každá šipka zasáhne tvora dle tvé volby, kterého vidíš v dosahu. Šipka způsobí cíli silové zranění 1k4 + 1. Šipky udeří všechny společně a můžeš je nasměrovat na jeden nebo více cílů.</p>",
@@ -2052,7 +2082,8 @@
       "hraničář",
       "klerik",
       "kouzelník",
-      "paladin"
+      "paladin",
+      "divutepec"
     ],
     "description": [
       "<p>Po dobu trvání vnímáš přítomnost magie do 6 sáhů od sebe. Pokud vycítíš magii tímto způsobem, můžeš pomocí své akce spatřit slabou auru kolem jakéhokoliv viditelného tvora nebo předmětu v oblasti, který má v sobě magii, a zjistíš jeho školu magie, pokud do nějaké patří.</p>",
@@ -2240,7 +2271,8 @@
     "classes": [
       "druid",
       "klerik",
-      "paladin"
+      "paladin",
+      "divutepec"
     ],
     "description": [
       "<p>Všechno nemagické jídlo a pití v kouli o poloměru 1 sáh se středem v bodě dle tvé volby v dosahu se očistí a zbaví se jedů a nemocí.</p>"
@@ -2262,7 +2294,8 @@
       "čaroděj",
       "druid",
       "hraničář",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Tvé kouzlo pohltí část zranění, kterou by ti útok způsobil a uchová ji do doby, než zaútočíš zbraní na blízko. Až do začátku svého dalšího kola jsi odolný vůči typu zranění, které způsobilo seslání tohoto kouzla. Kromě toho, při prvním útoku zbraní na blízko, který provedeš ve svém dalším kole, utrpí cíl tvého útoku navíc 1k6 zranění typu, který spustil kouzlo a toto kouzlo poté skončí.</p>",
@@ -2310,7 +2343,8 @@
     "duration": "Ihned",
     "classes": [
       "čaroděj",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Na tvora v dosahu vyšlehne paprsek odporné nazelenalé energie. Hoď si na útok na dálku kouzlem proti cíli. Při zásahu cíl utrpí jedové zranění 2k8 a musí si hodit záchranný hod na Odolnost. Když neuspěje, stane se také otrávený do konce tvého příštího tahu.</p>",
@@ -2420,7 +2454,8 @@
     "classes": [
       "bard",
       "čaroděj",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Zvol až pět padajících tvorů v dosahu. Rychlost klesání padajícího tvora se zpomalí na 12 sáhů za kolo, dokud kouzlo nekončí. Přistane-li tvor, než kouzlo skončí, neutrpí pádem z výšky žádné zranění, může přistát na nohou a kouzlo pro něj skončí.</p>"
@@ -2443,7 +2478,8 @@
     "duration": "8 hodin",
     "classes": [
       "hraničář",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Nastavíš poplach proti nežádoucímu narušení. Zvol dveře, okno, nebo oblast v dosahu, jenž není větší než krychle o straně 4 sáhy. Dokud kouzlo neskončí, alarm tě upozorní, kdykoliv se Drobný nebo větší tvor dotkne střežené oblasti, nebo do ní vstoupí. Když toto kouzlo sesíláš, můžeš určit tvory, kteří nespustí poplach. Zvolíš také, jestli bude poplach mentální, nebo zvukový.</p>",
@@ -2542,7 +2578,8 @@
     "classes": [
       "bard",
       "čaroděj",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Změníš svůj vzhled (včetně oblečení, zbroje, zbraní a ostatního vybavení), dokud kouzlo neskončí, nebo dokud nepoužiješ svou akci k jeho zrušení. Můžeš vypadat až o 1 stopu menší nebo větší a hubený, tlustý, nebo něco mezi. Musíš si zachovat stejný typ těla, takže musíš převzít podobu, která má stejné základní rozložení končetin. Jinak je ale rozsah iluze na tobě.</p>",
@@ -2637,7 +2674,8 @@
     "ingredients": "kus vepřové kůže, nebo máslo",
     "duration": "1 minuta",
     "classes": [
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Zemi pokryje čtverec kluzkého mazadla o straně 2 sáhy se středem v bodě v dosahu a promění ji po dobu trvání v těžký terén.</p>",
@@ -2684,7 +2722,8 @@
       "čaroděj",
       "druid",
       "hraničář",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Dotkneš se tvora. Dokud kouzlo neskončí, vzdálenost, kterou dokáže skočit, se ztrojnásobí.</p>"
@@ -2732,7 +2771,8 @@
     "classes": [
       "druid",
       "hraničář",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Během sesílání kouzla vytvoříš na zemi kruh z provazu s průměrem 1 sáhu. Když dokončíš sesílání kouzla, provaz zmizí a z kruhu se stane magická past.</p>",
@@ -2805,7 +2845,8 @@
     "classes": [
       "čaroděj",
       "černokněžník",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Toto kouzlo ti umožňuje pohybovat se neuvěřitelným tempem. Když sešleš toto kouzlo a pak jako bonusovou akci v každém svém tahu, dokud kouzlo neskončí, můžeš provést akci Sprint.</p>"
@@ -2852,7 +2893,8 @@
     "duration": "1 kolo",
     "classes": [
       "čaroděj",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Objeví se neviditelná bariéra magické síly, aby tě ochránila. Až do začátku svého příštího tahu máš bonus +5 k OČ, a to i proti spouštěcímu útoku, a magická střela ti nezpůsobí žádné zranění.</p>"
@@ -2991,7 +3033,8 @@
     "duration": "Ihned",
     "classes": [
       "bard",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Zvol jeden předmět, kterého se musíš dotýkat během vyvolávání kouzla. Je-li to kouzelný předmět nebo jiný magií prodchnutý předmět, zjistíš jeho vlastnosti a jak je používat, jestli předmět vyžaduje pro použití sladění a kolik má dávek, má-li nějaké. Zjistíš, jestli předmět ovlivňují nějaká kouzla a co jsou zač. Pokud předmět vytvořilo nějaké kouzlo, dozvíš se, jaké kouzlo ho vytvořilo.</p>",
@@ -3012,7 +3055,8 @@
     "duration": "Soustředění, až 1 minuta",
     "classes": [
       "bard",
-      "druid"
+      "druid",
+      "divutepec"
     ],
     "description": [
       "<p>Každý předmět v krychli 4 sáhy v dosahu se obalí modrým, zeleným, nebo fialovým světlem (dle tvé volby). Tímto světlem se obalí také tvorové v oblasti účinku, kteří neuspějí v záchranném hodu na Obratnost. Předměty a ovlivnění tvorové po dobu trvání vyzařují slabé světlo v okruhu o poloměru 2 sáhy.</p>",
@@ -3167,7 +3211,8 @@
       "druid",
       "hraničář",
       "klerik",
-      "paladin"
+      "paladin",
+      "divutepec"
     ],
     "description": [
       "<p>Tvor, kterého se dotkneš, si obnoví počet životů rovných 1k8 + tvá oprava sesílací vlastnosti. Toto kouzlo nijak nepůsobí na nemrtvé ani výtvory.</p>",
@@ -3356,7 +3401,8 @@
     ],
     "duration": "Soustředění, až 1 minuta",
     "classes": [
-      "paladin"
+      "paladin",
+      "divutepec"
     ],
     "description": [
       "<p>Až příště zasáhneš tvora útokem zbraní v průběhu trvání tohoto kouzla, zbraň při úderu zableskne astrálním zářením. Útok způsobí cíli dodatečné zářivé zranění 2k6 a je-li cíl neviditelný, stane se viditelný, protože začne slabě světélkovat v okruhu s poloměrem 1 sáh a do konce trvání kouzla se nemůže zneviditelnit.</p>",
@@ -3637,7 +3683,8 @@
     "duration": "Soustředění, až 10 minut",
     "classes": [
       "čaroděj",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Jeden tvor či předmět dle tvé volby, který vidíš v dosahu, se vznese svisle vzhůru až o 4 sáhy a zůstane tam viset po dobu trvání. Kouzlo dokáže levitovat cíl o váze až 500 lb. Pokud tvor nesouhlasí, aby byl cílem kouzla a uspěje v záchranném hodu na Odolnost, kouzlo na něj nepůsobí.</p>",
@@ -3662,7 +3709,8 @@
     "duration": "Do rozptýlení",
     "classes": [
       "bard",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Vštípíš zprávu do předmětu v dosahu. Zprávu, která se pronese, když nastane spouštěč. Zvol předmět, který vidíš a který nikdo nedrží ani nenese. Poté vyslov maximálně 25 slov dlouhou zprávu, kterou lze říct za nejvýše 10 minut. Nakonec urči okolnost, která spustí kouzlo a doručí zprávu.</p>",
@@ -3685,7 +3733,8 @@
     "duration": "Soustředění, až 1 hodina",
     "classes": [
       "kouzelník",
-      "paladin"
+      "paladin",
+      "divutepec"
     ],
     "description": [
       "<p>Dotkneš se nemagické zbraně. Tato zbraň se stane magickou zbraní s bonusem + 1 k hodům na útok a hodům na zranění, dokud kouzlo neskončí.</p>",
@@ -3734,7 +3783,8 @@
     "ingredients": "prášek z rebarborového listu a žaludek zmije",
     "duration": "Ihned",
     "classes": [
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>K cíli v dosahu vyletí třpytivý zelený šíp a vybuchne ve spršce kyseliny. Hoď si na útok na dálku kouzlem proti cíli. Při zásahu cíl utrpí kyselinové zranění 4k4 ihned a kyselinové zranění 2k4 na konci svého příštího tahu. Při minutí šíp pocáká cíl za poloviční počáteční zranění a žádné na konci jeho příštího tahu.</p>",
@@ -3827,7 +3877,8 @@
     "ingredients": "zlatý prach v hodnotě nejméně 25 zl, který kouzlo spotřebuje",
     "duration": "Do rozptýlení",
     "classes": [
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Dotkneš se zavřených dveří, okna, brány, truhly nebo jiného vstupu a zvolený předmět se uzamkne na dobu trvání. Ty a tvorové, které určíš při sesílání tohoto kouzla, můžete otevřít předmět normálně. Můžeš také nastavit heslo, které když se vysloví do 1 sáhu od předmětu, potlačí toto kouzlo na 1 minutu. Jinak je neprůchodný, dokud se nezničí, nebo dokud není kouzlo rozptýleno nebo potlačeno. Seslání kouzla zaklep na předmět potlačí mystický zámek na 10 minut.</p>",
@@ -3950,7 +4001,8 @@
     "classes": [
       "bard",
       "druid",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Způsobíš, že se na té části nebe, kterou vidíš, zformuje až deset slov podle tvé volby. Slova vypadají, jako by byla tvořena mraky a zůstanou na obloze vidět po celou dobu trvání kouzla. Oblačná slova zmizí, když kouzlo skončí, nebo když je rozežene silný vítr a ukončí tak kouzlo předčasně.</p>"
@@ -3975,7 +4027,8 @@
       "bard",
       "čaroděj",
       "černokněžník",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Tvor, kterého se dotkneš, se zneviditelní, dokud kouzlo neskončí. Cokoliv cíl nese, je neviditelné, dokud to neodloží. Kouzlo skončí pro daný cíl, pokud zaútočí nebo sešle kouzlo.</p>",
@@ -4000,7 +4053,8 @@
       "druid",
       "hraničář",
       "klerik",
-      "paladin"
+      "paladin",
+      "divutepec"
     ],
     "description": [
       "<p>Dotkneš se tvora a můžeš ukončit buď jednu nemoc, nebo jeden stav, který na něj působí. Stav může být hluchý, otrávený, paralyzovaný nebo slepý.</p>"
@@ -4127,7 +4181,8 @@
       "druid",
       "hraničář",
       "klerik",
-      "paladin"
+      "paladin",
+      "divutepec"
     ],
     "description": [
       "<p>Dotkneš se tvora. Je-li otráveny, zneutralizuješ mu jed. Působí-li na cíl více než jeden jed, zneutralizuješ mu jeden jed, o kterém víš, nebo mu zneutralizuješ jeden náhodně.</p>",
@@ -4173,7 +4228,8 @@
     "classes": [
       "čaroděj",
       "černokněžník",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Dokud kouzlo neskončí, jeden tvor, kterého se dotkneš a který s tím souhlasí, získá schopnost pohybovat se nahoru, dolů i do stran na svislých površích, a dokonce i po stropech hlavou dolů s volnýma rukama. Cíl také získá rychlost šplhání rovnou své rychlosti chůze.</p>"
@@ -4196,7 +4252,8 @@
     "duration": "Soustředění, až 1 hodina",
     "classes": [
       "čaroděj",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Vyvoláš velké množství tlusté, lepkavé pavučiny v bodě, který zvolíš v dosahu. Pavučiny vyplní krychli 4 sáhy z daného bodu po dobu trvání. Pavučiny jsou těžký terén a slabě zahalují svou oblast.</p>",
@@ -4223,7 +4280,8 @@
     "duration": "Soustředění, až 1 minuta",
     "classes": [
       "druid",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Na volném místě dle tvé volby v dosahu se objeví koule ohně o průměru 1 sáh a vydrží po dobu trvání. Každý tvor, který skončí svůj tah do 1 sáhu od koule, si musí hodit záchranný hod na Obratnost. Když tvor neuspěje, utrpí ohnivé zranění 2k6, nebo poloviční zranění při úspěšném záchranném hodu.</p>",
@@ -4249,7 +4307,8 @@
     "duration": "8 hodin",
     "classes": [
       "klerik",
-      "paladin"
+      "paladin",
+      "divutepec"
     ],
     "description": [
       "<p>Tvé kouzlo dodá tvým spojencům nezdolnost a odhodlanost. Zvol až tři tvory v dosahu. Každému cíli se po dobu trvání zvýší maximum a aktuální životy o 5.</p>",
@@ -4401,7 +4460,8 @@
     "classes": [
       "bard",
       "čaroděj",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Zvol si oblast hořící nemagickým plamenem, kterou vidíš v dosahu, a která se vejde do krychle o hraně 1 sáhu. Můžeš oheň uhasit, nebo jej proměnit v rachejtle či dým.</p>",
@@ -4446,7 +4506,8 @@
     "duration": "Soustředění, až 1 minuta",
     "classes": [
       "čaroděj",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Tvé tělo se stane jakoby zamlžené, přesouvá se a kolísá v očích každého, kdo tě vidí. Po dobu trvání má každý tvor nevýhodu k hodům na útok proti tobě. Útočník je imunní vůči tomuto účinku, pokud se neopírá o zrak, například s mimozrakovým vnímáním, nebo pokud vidí skrz iluze, například s pravdivým viděním.</p>"
@@ -4469,7 +4530,8 @@
     "duration": "Soustředění, až 1 minuta",
     "classes": [
       "bard",
-      "druid"
+      "druid",
+      "divutepec"
     ],
     "description": [
       "<p>Zvol vyrobený kovový předmět (například kovovou zbraň nebo těžkou či střední kovovou zbroj), který vidíš v dosahu. Způsobíš, že předmět svítí do ruda rozpálenou barvou. Tvor, který je ve fyzickém kontaktu s předmětem, utrpí ohnivé zranění 2k8, když sešleš toto kouzlo. Dokud kouzlo neskončí, můžeš v každém ze svých pozdějších tahů použít bonusovou akci k opětovnému způsobení tohoto zranění.</p>",
@@ -4496,7 +4558,8 @@
       "bard",
       "čaroděj",
       "černokněžník",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Z bodu, který zvolíš v dosahu, se rázem ozve bolestivě hlasitý tříštivý zvuk. Každý tvor v kouli o poloměru 2 sáhy se středem v daném bodě, si musí hodit záchranný hod na Odolnost. Když cíl neuspěje, utrpí hromové zranění 3k8, nebo poloviční zranění při úspěšném záchranném hodu. Tvor vyrobený z neživého materiálu, například kamene, křišťálu či kovu, má nevýhodu k tomuto záchrannému hodu.</p>",
@@ -4519,7 +4582,8 @@
     "duration": "Ihned",
     "classes": [
       "čaroděj",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Vytvoříš tři ohnivé paprsky a vrhneš je na cíle v dosahu. Můžeš je vrhnout na jeden, nebo několik cílů.</p>",
@@ -4568,7 +4632,8 @@
     "classes": [
       "bard",
       "čaroděj",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Po dobu trvání vidíš neviditelné tvory a předměty, jako by byly viditelní, a vidíš do Eterické sféry. Eteričtí tvorové a předměty vypadají přízračně a průsvitně.</p>"
@@ -4614,7 +4679,8 @@
     "ingredients": "dvojice platinových prstenů, každý v hodnotě aspoň 50 zl, které ty a cíl musíte mít navlečené na prstu po dobu trvání",
     "duration": "1 hodina",
     "classes": [
-      "klerik"
+      "klerik",
+      "divutepec"
     ],
     "description": [
       "<p>Toto kouzlo stráží tvora, kterého se dotkneš a který s tím souhlasí, a mezi tebou a cílem vytvoří mystické spojení, dokud kouzlo neskončí. Dokud je cíl do 12 sáhů od tebe, má bonus +1 k OČ a záchranným hodům a je odolný vůči všem zraněním. Současně pokaždé, když utrpí zranění, utrpíš stejně velké zranění ty.</p>",
@@ -4734,7 +4800,8 @@
     "ingredients": "moučkový kukuřičný extrakt a stočený pergamen",
     "duration": "1 hodina",
     "classes": [
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Dotkneš se lana, které je maximálně 12 sáhů dlouhé. Jeden konec lana se poté začne zvedat do vzduchu, dokud nevisí ve vzduchu svisle k zemi celé lano. U horního konce lana se otevře neviditelný vchod do mimodimenzionálního prostoru, který vydrží, dokud kouzlo neskončí.</p>",
@@ -4829,7 +4896,8 @@
     "duration": "Do rozptýlení",
     "classes": [
       "klerik",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Z předmětu, kterého se dotkneš, vzejde plamen, jehož jas je ekvivalentní k pochodni. Účinek vypadá jako běžný plamen, ale nevytváří žádné teplo a nespotřebovává kyslík. <em>Věčný plamen</em> lze zakrýt nebo schovat, ale ne udusit ani uhasit.</p>"
@@ -4854,7 +4922,8 @@
       "čaroděj",
       "druid",
       "hraničář",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Dotkneš se tvora, který s tím souhlasí, a udělíš mu schopnost vidět ve tmě. Po dobu trvání má vidění ve tmě na vzdálenost 12 sáhů.</p>"
@@ -4903,7 +4972,8 @@
       "bard",
       "čaroděj",
       "druid",
-      "klerik"
+      "klerik",
+      "divutepec"
     ],
     "description": [
       "<p>Dotkneš se tvora a propůjčíš mu magické zlepšení. Zvol jeden z následujících účinků; cíl získá účinek, dokud kouzlo neskončí.</p>",
@@ -4931,7 +5001,8 @@
     "duration": "Soustředění, až 1 hodina",
     "classes": [
       "čaroděj",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Vezmeš na sebe jinou podobu. Když sesíláš toto kouzlo, zvol jednu z následujících možností účinku, který vydrží po dobu trvání kouzla. Zatímco kouzlo trvá, můžeš jako akci ukončit jednu možnost a získat užitek z jiné možnosti.</p>",
@@ -5007,7 +5078,8 @@
     "classes": [
       "čaroděj",
       "černokněžník",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Ve tvém prostoru se objeví tři iluzorní kopie tebe. Dokud kouzlo neskončí, kopie se pohybují spolu s tebou, napodobují tvé akce a přesouvají svou pozici, takže je nemožné vysledovat, který obraz je skutečný. Pomocí své akce můžeš iluzorní kopie zrušit.</p>",
@@ -5034,7 +5106,8 @@
     "duration": "Soustředění, až 1 minuta",
     "classes": [
       "čaroděj",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Způsobíš, že tvor či předmět, jehož vidíš v dosahu, se zvětší či zmenší po dobu trvání. Zvol buď tvora, nebo předmět, který nikdo nedrží ani nenese. Pokud s tím cíl nesouhlasí, může si hodit záchranný hod na Odolnost. Když uspěje, kouzlo nemá žádný účinek.</p>",
@@ -5102,7 +5175,8 @@
     ],
     "duration": "Soustředění, až 1 minuta",
     "classes": [
-      "paladin"
+      "paladin",
+      "divutepec"
     ],
     "description": [
       "<p>Vyzařuje z tebe léčivá energie v auře o poloměru 6 sáhů. Dokud kouzlo neskončí, aura se pohybuje spolu s tebou se středem v tobě. Můžeš použít bonusovou akci a jednomu tvorovi v auře (včetně sebe) pomocí ní obnovit 2k6 životů.</p>"
@@ -5125,7 +5199,8 @@
     "duration": "Ihned",
     "classes": [
       "čaroděj",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Vyšlehne z tebe blesk a utvoří 20 sáhů dlouhou a 1 sáh širokou dráhu ve směru, který zvolíš. Každý tvor v dráze si musí hodit záchranný hod na Obratnost. Když tvor neuspěje, utrpí bleskové zranění 8k6, nebo poloviční zranění pří úspěšném záchranném hodu.</p>",
@@ -5196,7 +5271,8 @@
     ],
     "duration": "8 hodin",
     "classes": [
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Dotkneš se jednoho drobného, nemagického předmětu, který není připojen k jinému předmětu nebo povrchu a není nošen jiným tvorem. Zvolený předmět ožije, narostou mu ručičky a nožičky a stane se tvorem, kterého ovládáš až dokud kouzlo neskončí, nebo dokud mu životy neklesnou na 0.</p>",
@@ -5242,7 +5318,8 @@
     ],
     "duration": "Ihned",
     "classes": [
-      "klerik"
+      "klerik",
+      "divutepec"
     ],
     "description": [
       "<p>Proneseš slova obnovy a každý z až šest tvorů dle tvé volby, které vidíš v dosahu, si obnoví životy rovné 1k4 + tvá oprava sesílací vlastnosti. Toto kouzlo nijak nepůsobi na nemrtvé ani vytvory.</p>",
@@ -5291,7 +5368,8 @@
       "bard",
       "čaroděj",
       "černokněžník",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Vytvoříš zakroucený vzor barev, který se vlní vzduchem v krychli 6 sáhů v dosahu. Vzor se objeví na okamžik a zmizí. Každý tvor v oblasti, který vidí vzor, si musí hodit záchranný hod na Moudrost. Když tvor neuspěje, zmámíš ho po dobu trvání. Když je tvor zmámený tímto kouzlem, je neschopný a jeho rychlost je 0.</p>",
@@ -5317,7 +5395,8 @@
       "čaroděj",
       "druid",
       "hraničář",
-      "klerik"
+      "klerik",
+      "divutepec"
     ],
     "description": [
       "<p>Toto kouzlo dává schopnost pohybovat se po hladině kapaliny (například vody, kyseliny, bláta, sněhu, teku tého písku, ledu nebo lávy), jako by to byla pevná půda (přecházení přes žhavou lávu však stále způsobuje zra nění z žáru). Tuto schopnost získá až deset tvorů, které vidíš v dosahu a kteří s tím souhlasí, po dobu trvání.</p>",
@@ -5389,7 +5468,8 @@
     ],
     "duration": "Soustředění, až 1 minuta",
     "classes": [
-      "paladin"
+      "paladin",
+      "divutepec"
     ],
     "description": [
       "<p>Vyzařuje z tebe svatá síla v auře o poloměru 6 sáhů, která ve tvých přátelích vzbuzuje odvahu. Dokud kouzlo neskončí, aura se pohybuje s tebou ve svém středu. Každý tvor v auře (včetně tebe), který není vůči tobě nepřátelský způsobí svými útoky zbraní, které zasáhnou, dodatečné zářivé zranění 1k4.</p>"
@@ -5438,7 +5518,8 @@
     "classes": [
       "čaroděj",
       "černokněžník",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Dotkneš se tvora, který s tím souhlasí. Cíl získá rychlost létání 12 sáhů po dobu trvání. Když kouzlo skončí, a cíl je stále ve vzduchu, tak spadne, pokud nemůže zastavit pád.</p>",
@@ -5532,7 +5613,8 @@
     "duration": "1 minuta",
     "classes": [
       "čaroděj",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Hoď si k20 na konci každého svého tahu po dobu trvání kouzla. Když ti padne 11 či více, zmizíš ze své současné sféry existence a objevíš se v Éterické sféře (kouzlo selže a seslání se vyplýtvá, pokud při sesílání kouzla už v této sféře jsi). Na začátku tvého příštího tahu, a když kouzlo skončí a jsi přitom v Éterické sféře, se vrátíš na volné místo dle své volby, které vidíš do 2 sáhů od místa, ze kterého jsi zmizel. Pokud není v dosahu žádné volné místo, objevíš se na nejbližším volném místě (zvoleném náhodě, je-li více volných míst stejně blízko). Toto kouzlo můžeš zrušit jako akci.</p>",
@@ -5607,7 +5689,8 @@
     "classes": [
       "čaroděj",
       "černokněžník",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Tvora, kterého se dotkneš a který s tím souhlasí, přeměníš spolu se vším, co drží a nese, na mlžný oblak po dobu trvání. Kouzlo skončí, pokud počet životů tvora klesne na 0.Kouzlo nepůsobí na nehmotného tvora.</p>",
@@ -5680,7 +5763,8 @@
     "duration": "Ihned",
     "classes": [
       "klerik",
-      "paladin"
+      "paladin",
+      "divutepec"
     ],
     "description": [
       "<p>Dotkneš se tvora, který zemřel v průběhu poslední minuty. Tento tvor obživne s 1 životem. Toto kouzlo nedokáže vrátit k životu tvora, který zemřel stářím, ani nedokáže obnovit chybějící části těla.</p>"
@@ -5703,7 +5787,8 @@
     "duration": "Ihned",
     "classes": [
       "čaroděj",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Z tvého ukazováčku se blýskne jasná čmouha do bodu, který zvolíš v rámci dosahu, a pak s tichým zaburácením rozkvete do ohnivého výbuchu. Každý tvor v kouli o poloměru 4 sáhy se středem v daném bodě si musí hodit záchranný hod na Obratnost. Když cíl neuspěje, utrpí ohnivé zranění 8k6, nebo poloviční zranění při úspěšném záchranném hodu.</p>",
@@ -5729,7 +5814,8 @@
       "druid",
       "hraničář",
       "klerik",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Tvor, kterého se dotkneš a který s tím souhlasí, je po dobu trvání odolný vůči jednomu typu zranění dle tvé volby: bleskové, hromové, chladné, kyselinové, nebo ohnivé.</p>"
@@ -5844,7 +5930,8 @@
       "čaroděj",
       "druid",
       "hraničář",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Dotkneš se toulce, obsahujícího šípy nebo šipky. Je-li cíl zasažen útokem na dálku střelou vytaženou z tohoto toulce, utrpí navíc 1k6 ohnivého zranění. Očarování střely skončí ve chvíli, kdy zasáhne nebo mine cíl a kouzlo samotné skončí po vytažení dvanácté střely z toulce.</p>",
@@ -6037,7 +6124,8 @@
       "hraničář",
       "klerik",
       "kouzelník",
-      "paladin"
+      "paladin",
+      "divutepec"
     ],
     "description": [
       "<p>Zvol jednoho tvora, předmět nebo magický účinek působící na cíl skončí. Za každé kouzlo na 4. či vyšší úrovni působící na cíl si hodíš na ověření vlastnosti s použitím své sesílací vlastnosti. SO je roven 10 + úroveň kouzla. Při úspěšném ověření dané kouzlo skončí.</p>",
@@ -6086,7 +6174,8 @@
     "duration": "Soustředění, až 1 minuta",
     "classes": [
       "čaroděj",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Zvol tvora, kterého vidíš v dosahu a který s tím souhlasí. Dokud kouzlo neskončí, rychlost tvora se zdvojnásobí, získá bonus +2 k OČ, má výhodu k záchranným hodům na Obratnost a v každém svém tahu získá další akci. Tato akce se dá použít pouze k provedení akce Odpoutání se, Použití předmětu, Skrytí, Sprint, nebo Útok (jen jeden útok zbraní).</p>",
@@ -6160,7 +6249,8 @@
     "classes": [
       "bard",
       "klerik",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Když sesíláš toto kouzlo, vyryješ znak, který zraňuje ostatní tvory, buď na povrch (například na stůl nebo část podlahy či zdi), nebo do předmětu, který se dá zavřít (například do knihy, svitku či truhly) pro ukrytí znaku. Zvolíš-li povrch, znak může pokrývat oblast menší nebo rovnou 2 sáhy v průměru. Zvolíš-li předmět, pak tento předmět musí zůstat na místě; pokud se vzdálí o víc než 2 sáhy od místa, kde jsi seslal toto kouzlo, znak se rozptýlí a kouzlo skončí bez spuštění.</p>",
@@ -6188,7 +6278,8 @@
     "duration": "Ihned",
     "classes": [
       "klerik",
-      "paladin"
+      "paladin",
+      "divutepec"
     ],
     "description": [
       "<p>Na zemi nebo v nádobách v dosahu vytvoříš 45 liber jídla a 30 galonů vody, jež vydrží až patnácti humanoidům nebo pěti jízdním zvířatům 24 hodin.Jídlo je mdlé, ale výživné, a nesní-li se do 24 hodin, tak se zkazí. Voda je čistá a nekazí se.</p>"
@@ -6254,7 +6345,8 @@
     "classes": [
       "bard",
       "čaroděj",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Provedeš uklidňující gesto a až tři tvorové, kteří s tím souhlasí, nacházející se v dosahu a které vidíš, upadnou po dobu trvání kouzla do bezvědomí. Kouzlo skončí předčasně, pokud bezvědomého tvora něco zraní, nebo někdo využije svou akci k tomu, aby tvora probudil profackováním nebo zatřesením s ním. Pokud tvor zůstane v bezvědomí po celou dobu kouzla, je odpočatý, jako by právě absolvoval krátký odpočinek a až do jeho důkladného odpočinku na něj další seslání tohoto kouzla nemá žádný vliv.</p>",
@@ -6376,7 +6468,8 @@
     "duration": "Soustředění, až 1 minuta",
     "classes": [
       "druid",
-      "hraničář"
+      "hraničář",
+      "divutepec"
     ],
     "description": [
       "<p>V bodě, který z volíš v dosahu, vyvstane ze země zeď silného větru. Zeď můžeš udělat až 10 sáhů dlouhou, 3 sáhy vysokou a 1 stopu tlustou. Můžeš ji vytvarovat, jak chceš, pokud bude tvořit jednu celistvou trasu podél země. Vydrží po dobu trvání.</p>",
@@ -6403,7 +6496,8 @@
       "čaroděj",
       "druid",
       "hraničář",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Toto kouzlo dá až deseti tvorům, kteří s tím souhlasí a které vidíš v dosahu, schopnost dýchat pod vodou, dokud kouzlo neskončí. Ovlivnění tvorové si také uchovají svůj normální způsob dýchání.</p>"
@@ -6504,7 +6598,8 @@
     "ingredients": "jedna střela, nebo vrhací zbraň",
     "duration": "Ihned",
     "classes": [
-      "hraničář"
+      "hraničář",
+      "divutepec"
     ],
     "description": [
       "<p>Vystřelíš do vzduchu nemagickou střelu ze střelné zbraně, nebo vrhneš do vzduchu nemagickou vrhací zbraň, a vytvoříš tak kužel totožných střel či zbraní, které vystřelí kupředu a pak zmizí. Každý tvor v kuželu 12 sáhů si musí hodit záchranný hod na Obratnost. Když tvor neuspěje, utrpí zranění 3k8, nebo poloviční zranění při úspěšném záchranném hodu. Typ zranění je stejný jako u použité střely či zbraně.</p>"
@@ -6627,7 +6722,8 @@
     ],
     "duration": "Soustředění, až 1 hodina",
     "classes": [
-      "paladin"
+      "paladin",
+      "divutepec"
     ],
     "description": [
       "<p>Nemagická zbraň, které se dotkneš, se stane kouzelnou zbraní. Zvol jeden z následujících typů zranění: bleskové, hromové, chladné, kyselinové, nebo ohnivé. Po dobu trvání má zbraň bonus + 1 k hodům na útok, a když zasáhne, způsobí dodatečné zranění tebou zvoleného typu 1k4.</p>",
@@ -6647,7 +6743,8 @@
     ],
     "duration": "Soustředění, až 10 minut",
     "classes": [
-      "paladin"
+      "paladin",
+      "divutepec"
     ],
     "description": [
       "<p>Vyzařuje z tebe očistná energie v auře o poloměru 6 sáhů. Dokud kouzlo neskončí, aura se pohybuje s tebou se středem v tobě. Každý tvor v auře (včetně tebe), který není vůči tobě nepřátelský, nemůže onemocnět, je odolný vůči jedovému zranění a má výhodu k záchranným hodům proti účinkům způsobujícím následující stavy: hluchý, ochromený, otrávený, paralyzovaný, slepý, vystrašený a zmámený.</p>"
@@ -6781,7 +6878,8 @@
       "čaroděj",
       "černokněžník",
       "druid",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Přes tvora dle tvé volby, kterého vidíš v dosahu, se přežene vlna nekromantické energie a vysaje z jeho těla vláhu a vitalitu. Cíl si musí hodit záchranný hod na Odolnost. Když neuspěje, utrpí nekrotické zranění 8k8, nebo poloviční zranění při úspěšném záchran ném hodu. Toto kouzlo nijak nepůsobí na nemrtvé ani výtvory.</p>",
@@ -6833,7 +6931,8 @@
       "čaroděj",
       "druid",
       "hraničář",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Toto kouzlo promění tělo tvora, kterého se dotkneš a který s tím souhlasí, že ztvrdne jako kámen. Dokud kouzlo neskončí, je cíl odolný vůči nemagickému bodnému, drtivému a sečnému zranění.</p>"
@@ -6907,7 +7006,8 @@
     "classes": [
       "čaroděj",
       "druid",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Ledové kroupy tvrdé jako kámen bubnují o zem ve válci s poloměrem 4 sáhy, výškou 9 sáhů a středem v bodě v dosahu. Každý tvor ve válci si musí hodit záchranný hod na Obratnost. Když tvor neuspěje, utrpí drtivé zranění 2k8 a chladné zranění 4k6, nebo poloviční zranění při úspěšném záchranném hodu.</p>",
@@ -6931,7 +7031,8 @@
     "ingredients": "znamenitá truhla, 3 X 2 X 2. stopy, vyrobená ze vzácných materiálů v hodnotě aspoň 5 000 zl a Drobná replika vyrobená ze stejných materiálů v hodnotě aspoň 50 zl",
     "duration": "Ihned",
     "classes": [
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Schováš truhlu a vše, co je v ní, do Éterické sféry. Musíš se dotknout truhly a miniaturní repliky, které slouží jako surovinové složky kouzla. Truhla pojme až 12 stop krychlových neživého materiálu (3 x 2 x 2 stopy).</p>",
@@ -6955,7 +7056,8 @@
     "classes": [
       "bard",
       "čaroděj",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Buď ty, nebo tvor, kterého se dotkneš, se stane neviditelný, dokud kouzlo neskončí. Vše, co cíl nese, je neviditelné, dokud to neodloží.</p>"
@@ -7002,7 +7104,8 @@
     "ingredients": "malinká stříbrná píšťalka, kus kosti a šňůrka",
     "duration": "8 hodin",
     "classes": [
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Vyvoláš přízračného hlídacího psa na volném místě, které vidíš v dosahu, kde vydrží po dobu trvání, dokud ho nezrušíš jako akci, nebo dokud se od něj nevzdálíš dál než 20 sáhů.</p>",
@@ -7026,7 +7129,8 @@
     "ingredients": "kousek netopýří kůže",
     "duration": "Soustředění, až 1 hodina",
     "classes": [
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>V rámci dosahu vytvoříš neviditelné, magické oko, které se vznáší ve vzduchu po dobu trvání.</p>",
@@ -7172,7 +7276,8 @@
     "classes": [
       "čaroděj",
       "druid",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>V rámci dosahu vytvoříš na pevném povrchu ohnivou zeď. Můžeš ji vytvořit až 12 sáhů dlouhou, až 4 sáhy vysokou a až 1 stopu tlustou, nebo kruhovou s průměrem až 4 sáhy, až 4 sáhy vysokou a až 1 stopu tlustou. Zeď je neprůhledná a vydrží po dobu trvání.</p>",
@@ -7197,7 +7302,8 @@
     "ingredients": "kousek fosforu, nebo světluška",
     "duration": "10 minut",
     "classes": [
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Po dobu trvání tvé tělo ovinou tenké plameny a osvítí jasným světlem okruh o poloměru 2 sáhy a další 2 sáhy dosvítí slabým světlem. Kouzlo můžeš předčasně ukonči použitím akce na jeho zrušení.</p>",
@@ -7245,7 +7351,8 @@
     "ingredients": "polokoule z čirého křišťálu a odpovídající polokoule z arabské gumy",
     "duration": "Soustředění, až 1 minuta",
     "classes": [
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Koule třpytivé síly obklopí Velkého nebo menšího tvora či předmět v dosahu. Tvor, který s tím nesouhlasí, si musí hodit záchranný hod na Obratnost. Když neuspěje, je obklopen po dobu trvání.</p>",
@@ -7499,7 +7606,8 @@
       "bard",
       "druid",
       "hraničář",
-      "klerik"
+      "klerik",
+      "divutepec"
     ],
     "description": [
       "<p>Dotkneš se tvora, který s tím souhlasí. Po dobu trvání na pohyb cíle nepůsobí těžký terén a kouzla a jiné magické účinky nemohou omezit rychlost cíle ani ho nemohou paralyzovat či zadržet.</p>",
@@ -7649,7 +7757,8 @@
     ],
     "duration": "Ihned",
     "classes": [
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Přeměníš surový materiál do produktu ze stejného materiálu. Například, ze shluku stromů můžeš zhotovit dřevěný most, z kusu konopí můžeš zhotovit lano a z plátna nebo vlny můžeš zhotovit oblečení.</p>",
@@ -7726,7 +7835,8 @@
     "duration": "8 hodin",
     "classes": [
       "klerik",
-      "paladin"
+      "paladin",
+      "divutepec"
     ],
     "description": [
       "<p>Dotkneš se tvora a poskytneš mu určitou míru ochrany před smrtí.</p>",
@@ -7750,7 +7860,8 @@
     "classes": [
       "černokněžník",
       "druid",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Zvol si jednoho tvora, kterého vidíš a který se nachází v dosahu a zvol si jeden z následujících druhů zranění: bleskové, hromové, chladné, kyselinové, nebo ohnivé. Cíl musí uspět v záchranném hodu na Odolnost, jinak bude trpět následky kouzla po dobu jeho trvání. Poprvé, když je ovlivněný tvor ve svém kole zasažen daným typem zranění, utrpí navíc 2k6 zranění tohoto typu. Kromě toho cíl až do konce kouzla ztrácí odolnost vůči tomuto typu zranění.</p>",
@@ -7773,7 +7884,8 @@
     "ingredients": "skořápka a jedna rukavice z hadí kůže",
     "duration": "Soustředění, až 1 minuta",
     "classes": [
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Na volném místě, které vidíš v dosahu, vytvoříš Velkou ruku světélkující, průsvitné síly. Ruka vydrží po dobu trvání kouzla, pohybuje se na tvůj rozkaz a napodobuje pohyby tvé vlastní ruky.</p>",
@@ -7921,7 +8033,8 @@
     "classes": [
       "bard",
       "druid",
-      "klerik"
+      "klerik",
+      "divutepec"
     ],
     "description": [
       "<p>Z bodu, který zvolíš v dosahu, se vyvalí vlna léčivé energie. Zvol až šest tvorů v kouli o poloměru 6 sáhů se středem v daném bodě. Každý cíl si obnoví životy rovné 3k8 + tvá oprava sesílací vlastnosti. Toto kouzlo nijak nepůsobí na nemrtvé ani výtvory.</p>",
@@ -7968,7 +8081,8 @@
     "classes": [
       "čaroděj",
       "druid",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>V tebou zvoleném bodě v dosahu náhle vyvstane nemagická kamenná zeď. Zeď je 6 coulů tlustá a skládá se z deseti panelů 2 X 2 sáhy. Každý panel musí přiléhat aspoň k jednomu jinému panelu. Nebo můžeš vytvořit panely 2 X 4 sáhy, které jsou jen 3 couly tlusté.</p>",
@@ -8015,7 +8129,8 @@
     "duration": "Ihned",
     "classes": [
       "čaroděj",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Ze tvých rukou vyšlehne mrazivý vzduch. Každý tvor v kuželu 12 sáhů si musí hodit záchranný hod na Odolnost. Když tvor neuspěje, utrpí chladné zranění 8k8, nebo poloviční zranění při úspěšném záchranném hodu.</p>",
@@ -8084,7 +8199,8 @@
     "classes": [
       "bard",
       "druid",
-      "klerik"
+      "klerik",
+      "divutepec"
     ],
     "description": [
       "<p>Tvora, jehož se dotkneš, naplníš pozitivní energií a zrušíš vysilující účinek. Můžeš snížit únavu cíle o jeden stupeň, nebo ukončit jeden z následujících účinků, jenž působí na cíl:</p>",
@@ -8153,7 +8269,8 @@
     "duration": "Soustředění, až 10 minut",
     "classes": [
       "čaroděj",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Vytvoříš kouli jedovaté, žlutozelené mlhy o poloměru 4 sáhy se středem v bodě, který zvolíš v dosahu. Mlha se rozšiřuje kolem rohů. Vydrží po dobu trvání, nebo dokud ji nerozfouká silný vítr, čímž kouzlo skončí. Oblast je husté zahalená.</p>",
@@ -8203,7 +8320,8 @@
     "classes": [
       "bard",
       "čaroděj",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Předměty oživnou na tvůj povel. Zvol až deset nemagických předmětů v dosahu, které nikdo nedrží ani nenese. Střední cíle se počítají za dva předměty, Velké cíle se počítají za čtyři předměty a Obrovské cíle se počítají za osm předmětů. Nemůžeš oživit větší předmět než Obrovský. Každý cíl oživne a stane se tvorem pod tvou kontrolou, dokud kouzlo neskončí, nebo dokud se nesníží jeho životy na 0.</p>",
@@ -8311,7 +8429,8 @@
     "classes": [
       "bard",
       "čaroděj",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Pomocí své magie pomůžeš zvolenému tvorovi prohloubit jeho znalosti. Dotkneš se jednoho tvora a učiníš jej zdatným v jedné dovednosti podle tvé volby. Až do konce kouzla si tvor zdvojnásobí svůj zdatností bonus ke všem ověřením této dovednosti.</p>",
@@ -8417,7 +8536,8 @@
     "ingredients": "špetka sezamových semínek",
     "duration": "1 hodina",
     "classes": [
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>V bodě dle tvé volby, který vidíš na dřevěném, omítnutém nebo kamenném povrchu (například na zdi, stopu či podlaze) v dosahu, se objeví průchod po dobu trvání. Zvolíš rozměry otvoru: šířku až 1 sáh, výšku až 8 stop a hloubku až 4 sáhy. Otvor nezpůsobuje žádnou nestabilitu okolí.</p>",
@@ -8441,7 +8561,8 @@
     "duration": "Do rozptýlení",
     "classes": [
       "druid",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Zvolíš si objem bláta nebo kamene, který se vejde do krychle o hraně 8 sáhů a který vidíš v dosahu. Zvol jeden z následujících účinků.</p>",
@@ -8867,7 +8988,8 @@
     "duration": "Zvláštní",
     "classes": [
       "čaroděj",
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>Vytáhneš ze Stínopádu chuchvalce stínového materiálu a v rámci dosahu vytvoříš neživý předmět z rostlinného materiálu: plátno, provaz, dřevo či něco podobného. Toto kouzlo můžeš použít také k tvorbě nerostných předmětů, jako je například kámen, křišťál či kov. Předmět se musí vejít do krychle o straně 1 sáh a musí mít tvar a být z materiálu, který jsi už někdy viděl.</p>",
@@ -9009,7 +9131,8 @@
     ],
     "duration": "Soustředění, až 1 minuta",
     "classes": [
-      "paladin"
+      "paladin",
+      "divutepec"
     ],
     "description": [
       "<p>Až příště zasáhneš tvora útokem zbraní v průběhu trvání tohoto kouzla, zbraň zajiskří silou a útok způsobí cíli dodatečné silové zranění 5k10. Pokud navíc toto kouzlo sníží životy cíle na 50 či méně, tvora vypudíš. Patří-li cíl do jiné sféry existence, než ve které se nacházíš spolu s cílem, vypudíš ho s tichým třesknutím zpět do jeho domovské sféry. Je-li sféra existence, ve které se spolu nacházíte, jeho domovskou sférou, vypudíš ho do neškodné polosféry. V ní je cíl neschopný. Zůstane v ní, dokud kouzlo neskončí, načeš se znovu objeví na místě, které opustil, nebo na nejbližším volném místě, pokud je jeho původní místo obsazené.</p>"
@@ -9081,7 +9204,8 @@
     "classes": [
       "bard",
       "klerik",
-      "paladin"
+      "paladin",
+      "divutepec"
     ],
     "description": [
       "<p>Dotkneš se mrtvého tvora a navrátíš mu život, pokud není mrtvý déle než 10 dní. Je-li duše tvora svolná se znovu spojit s tělem a nic jí nebrání, pak tvor obživne s 1 životem.</p>",
@@ -9129,7 +9253,8 @@
     "ingredients": "špetka prachu vytvořená drcením čirého drahokamu",
     "duration": "Soustředění, až 10 minut",
     "classes": [
-      "kouzelník"
+      "kouzelník",
+      "divutepec"
     ],
     "description": [
       "<p>V bodě, který zvolíš v dosahu, se vynoří neviditelná zeď síly. Zeď se objeví v libovolné orientaci, kterou zvolíš: jako svislá či vodorovná bariéra, nebo pod jistým úhlem. Může se volně vznášet, nebo spočívat na pevném povrchu. Můžeš ji vytvarovat do polokulovité kupole či koule s poloměrem až 2 sáhy, nebo můžeš vytvarovat rovný povrch z až deseti krychlových panelů o straně 2 sáhy. Každý panel musí přiléhat k jinému panelu. V jakémkoli tvaru je zeď čtvrt coulu tlustá a vydrží po dobu trvání. Pokud zeď, když se objeví, prochází místem tvora, pak tento tvor je odtlačen na jednu stanu zdi (dle tvé volby).</p>",
