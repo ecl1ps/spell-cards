@@ -703,7 +703,6 @@ body .b-share {
 
 .card * {
   font-size: 10px;
-  color: #676a6c !important;
 }
 
 .card {
@@ -1500,8 +1499,8 @@ input[name="level"] {
   left: 60px;
 }
 
-.card * {
-  color: black !important;
+.card {
+  color: black;
 }
 .card .need,
 .card .type,

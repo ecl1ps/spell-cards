@@ -213,6 +213,8 @@
         texts[texts.length - 2] += " " + texts[texts.length - 1];
       }
 
+      texts = texts.map(highlightText);
+
       for (let i = 0; i < cards.length; i++) {
         const textElement = cards[i].querySelector(".text");
         const needElement = cards[i].querySelector(".need");

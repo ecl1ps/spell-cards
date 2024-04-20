@@ -125,6 +125,43 @@
     .card .text * {
         font-size: unset;
     }
+
+    .card .text .damage {
+        font-weight: bold;
+    }
+    .damage.thunder {
+        color: #673c8a;
+    }
+    .damage.acid {
+        color: #bbc00d;
+    }
+    .damage.fire {
+        color: #cf5605;
+    }
+    .damage.psychic {
+        color: #b482a5;
+    }
+    .damage.lightning {
+        color: #3d6dc1;
+    }
+    .damage.poison {
+        color: #a6c505;
+    }
+    .damage.frost {
+        color: #65abb1;
+    }
+    .damage.force {
+        color: #9e1c20;
+    }
+    .damage.radiant {
+        color: #b98c07;
+    }
+    .damage.necrotic {
+        color: #7eb461;
+    }
+    .damage.slashing, .damage.piercing, .damage.bludgeoning {
+        color: #7a7877;
+    }
     `;
 
     document.getElementById("style-override")?.remove();
