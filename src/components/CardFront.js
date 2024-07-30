@@ -24,7 +24,15 @@ const componentMap = { V: "Verb.", S: "Sur.", P: "Poh." };
  */
 
 /**
- * @param {{ spell: Spell }} spell
+ * @typedef {Spell & {
+ *    formattedDescription: string,
+ *    cardMax: number,
+ *    cardNumber: number,
+ *  }} SpellCard
+ */
+
+/**
+ * @param {{ spell: SpellCard }} spell
  */
 export function CardFront({ spell }) {
   return (
@@ -42,7 +50,7 @@ export function CardFront({ spell }) {
             <div className={`name-first${spell.name.length > 20 ? " small" : ""}`}>{spell.name}</div>
             <hr className="name-separator" />
             <div className={`name-second${spell.originalName?.length ?? 0 > 30 ? " small" : ""}`}>{spell.originalName}</div>
-            <div className="name-suffix"></div>
+            <div className="name-suffix">{spell.cardMax > 1 ? `[${spell.cardNumber}/${spell.cardMax}]` : ""}</div>
           </h3>
           <ul className="status lined">
             <li>
@@ -76,7 +84,7 @@ export function CardFront({ spell }) {
           </ul>
 
           {spell.ingredients ? <b className="need">{spell.ingredients}</b> : null}
-          <p className="text" dangerouslySetInnerHTML={{ __html: spell.description.join("") }}></p>
+          <p className="text" dangerouslySetInnerHTML={{ __html: spell.formattedDescription }}></p>
         </div>
         <b className="class srclass">{spell.classes.join(", ")}</b>
         <b className="type srtype">

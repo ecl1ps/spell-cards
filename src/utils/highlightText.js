@@ -99,7 +99,7 @@ function wrapWithElement(text, tag, attributes) {
   return `<${tag}${attributes ? ` ${attributes}` : ""}>${text}</${tag}>`;
 }
 
-function highlightText(text) {
+export function highlightText(text) {
   let formattedText = text;
 
   for (const [matcher, formatter] of HIGHLIGHT_RULES) {

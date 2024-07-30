@@ -132,7 +132,7 @@
     document.querySelector("#print-mode").addEventListener("click", togglePrintPreview);
   }
 
-  translatedDescriptionAndResize();
+  //translatedDescriptionAndResize();
   fixBackSidesWhenSelectingSpecific();
   addPrintPreview();
 })();
