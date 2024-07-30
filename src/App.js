@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+// @ts-check
+import React, { useEffect, useState } from "react";
+import "./App.css";
+import { Tools } from "./components/Tools";
+import { Navigation } from "./components/Navigation";
+import { Cards } from "./components/Cards/Cards";
 
 function App() {
+  const [spells, setSpells] = useState();
+  useEffect(() => {
+    fetch(process.env.PUBLIC_URL + "/spells.json").then(async (response) => {
+      const spells = await response.json();
+
+      setSpells(spells);
+    });
+  }, []);
+
+  if (!spells) return "Loading...";
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <body className="color-2 cardmode">
+      <Navigation />
+      <Tools />
+      <Cards spells={spells} />
+    </body>
   );
 }
 

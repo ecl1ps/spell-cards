@@ -1,4 +1,4 @@
-﻿/**
+/**
  * textFit v2.3.1
  * Previously known as jQuery.textFit
  * 11/2014 by STRML (strml.github.com)
@@ -62,11 +62,7 @@
 
     // Support passing a single el
     var elType = Object.prototype.toString.call(els);
-    if (
-      elType !== "[object Array]" &&
-      elType !== "[object NodeList]" &&
-      elType !== "[object HTMLCollection]"
-    ) {
+    if (elType !== "[object Array]" && elType !== "[object NodeList]" && elType !== "[object HTMLCollection]") {
       els = [els];
     }
 
@@ -82,10 +78,7 @@
    * @param  {Object} settings     Options for fit.
    */
   function processItem(el, settings) {
-    if (
-      !isElement(el) ||
-      (!settings.reProcess && el.getAttribute("textFitted"))
-    ) {
+    if (!isElement(el) || (!settings.reProcess && el.getAttribute("textFitted"))) {
       return false;
     }
 
@@ -104,18 +97,8 @@
 
     // Don't process if we can't find box dimensions
     if (!originalWidth || (!settings.widthOnly && !originalHeight)) {
-      if (!settings.widthOnly)
-        throw new Error(
-          "Set a static height and width on the target element " +
-            el.outerHTML +
-            " before using textFit!"
-        );
-      else
-        throw new Error(
-          "Set a static width on the target element " +
-            el.outerHTML +
-            " before using textFit!"
-        );
+      if (!settings.widthOnly) throw new Error("Set a static height and width on the target element " + el.outerHTML + " before using textFit!");
+      else throw new Error("Set a static width on the target element " + el.outerHTML + " before using textFit!");
     }
 
     // Add textFitted span inside this container.
@@ -133,10 +116,7 @@
       innerSpan = el.querySelector("span.textFitted");
       // Remove vertical align if we're reprocessing.
       if (hasClass(innerSpan, "textFitAlignVert")) {
-        innerSpan.className = innerSpan.className.replace(
-          "textFitAlignVert",
-          ""
-        );
+        innerSpan.className = innerSpan.className.replace("textFitAlignVert", "");
         innerSpan.style["height"] = "";
         el.className.replace("textFitAlignVertFlex", "");
       }
@@ -151,12 +131,7 @@
     // Check if this string is multiple lines
     // Not guaranteed to always work if you use wonky line-heights
     var multiLine = settings.multiLine;
-    if (
-      settings.detectMultiLine &&
-      !multiLine &&
-      innerSpan.scrollHeight >=
-        parseInt(window.getComputedStyle(innerSpan)["font-size"], 10) * 2
-    ) {
+    if (settings.detectMultiLine && !multiLine && innerSpan.scrollHeight >= parseInt(window.getComputedStyle(innerSpan)["font-size"], 10) * 2) {
       multiLine = true;
     }
 
@@ -172,10 +147,7 @@
     while (low <= high) {
       mid = parseInt((low + high) * 5, 10) / 10;
       innerSpan.style.fontSize = mid + "px";
-      if (
-        innerSpan.scrollWidth <= originalWidth &&
-        (settings.widthOnly || innerSpan.scrollHeight <= originalHeight)
-      ) {
+      if (innerSpan.scrollWidth <= originalWidth && (settings.widthOnly || innerSpan.scrollHeight <= originalHeight)) {
         low = mid + 0.1;
       } else {
         high = mid - 0.1;
@@ -195,10 +167,7 @@
         innerSpan.className = innerSpan.className + " textFitAlignVert";
       }
       innerSpan.style["height"] = height + "px";
-      if (
-        settings.alignVertWithFlexbox &&
-        !hasClass(el, "textFitAlignVertFlex")
-      ) {
+      if (settings.alignVertWithFlexbox && !hasClass(el, "textFitAlignVertFlex")) {
         el.className = el.className + " textFitAlignVertFlex";
       }
     }
@@ -207,32 +176,20 @@
   // Calculate height without padding.
   function innerHeight(el) {
     var style = window.getComputedStyle(el, null);
-    return (
-      el.clientHeight -
-      parseInt(style.getPropertyValue("padding-top"), 10) -
-      parseInt(style.getPropertyValue("padding-bottom"), 10)
-    );
+    return el.clientHeight - parseInt(style.getPropertyValue("padding-top"), 10) - parseInt(style.getPropertyValue("padding-bottom"), 10);
   }
 
   // Calculate width without padding.
   function innerWidth(el) {
     var style = window.getComputedStyle(el, null);
-    return (
-      el.clientWidth -
-      parseInt(style.getPropertyValue("padding-left"), 10) -
-      parseInt(style.getPropertyValue("padding-right"), 10)
-    );
+    return el.clientWidth - parseInt(style.getPropertyValue("padding-left"), 10) - parseInt(style.getPropertyValue("padding-right"), 10);
   }
 
   //Returns true if it is a DOM element
   function isElement(o) {
     return typeof HTMLElement === "object"
       ? o instanceof HTMLElement //DOM2
-      : o &&
-          typeof o === "object" &&
-          o !== null &&
-          o.nodeType === 1 &&
-          typeof o.nodeName === "string";
+      : o && typeof o === "object" && o !== null && o.nodeType === 1 && typeof o.nodeName === "string";
   }
 
   function hasClass(element, cls) {

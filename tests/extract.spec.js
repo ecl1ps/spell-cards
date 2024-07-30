@@ -80,6 +80,9 @@ test("extract czech spell data", async ({ page }) => {
         console.log(`duration undefined for ${spell.name}`);
       }
 
+      const concentration = duration ? duration.toLowerCase().includes("soustředění") : false;
+      const ritual = rawSchoolAndLevel ? rawSchoolAndLevel.toLowerCase().includes("rituál") : false;
+
       // TODO: only one spell has Divutepec in its class list
       const classes = /^Povolání:? (.+)/ // TYPO IN DATA
         .exec(rawClasses)?.[1]
@@ -101,6 +104,8 @@ test("extract czech spell data", async ({ page }) => {
         ingredients,
         duration,
         classes,
+        concentration,
+        ritual,
         description: spellElements.slice(offset + 8).map((el) => el.outerHTML),
       };
     }

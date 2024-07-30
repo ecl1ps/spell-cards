@@ -1,4 +1,4 @@
-﻿const DAMAGE_TO_CLASS = {
+const DAMAGE_TO_CLASS = {
   hromové: "thunder",
   kyselinové: "acid",
   ohnivé: "fire",

@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/ecl1ps/spell-cards/issues"
   },
-  "homepage": "https://github.com/ecl1ps/spell-cards#readme",
+  "_homepage": "https://github.com/ecl1ps/spell-cards",
   "private": true,
   "main": "index.js",
   "dependencies": {
