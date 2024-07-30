@@ -1,5 +1,8 @@
 // @ts-check
 import React from "react";
+import { spellSchools } from "./spellSchools";
+
+const componentMap = { V: "Verb.", S: "Sur.", P: "Poh." };
 
 /**
  * @typedef {{
@@ -36,14 +39,15 @@ export function CardFront({ spell }) {
                 {spell.ritual ? "R" : ""}
               </span>
             </div>
-            <div className="name-first">{spell.name}</div>
+            <div className={`name-first${spell.name.length > 20 ? " small" : ""}`}>{spell.name}</div>
             <hr className="name-separator" />
-            <div className="name-second">{spell.originalName}</div>
+            <div className={`name-second${spell.originalName?.length ?? 0 > 30 ? " small" : ""}`}>{spell.originalName}</div>
             <div className="name-suffix"></div>
           </h3>
           <ul className="status lined">
             <li>
               <em>vyvolání</em>
+              {spell.ritual ? "Rituál / " : ""}
               {spell.castTime}
             </li>
             <li className="second">
@@ -59,7 +63,7 @@ export function CardFront({ spell }) {
           <ul className="status lined">
             <li>
               <em>komponenty</em>
-              {spell.components.join(", ")}
+              {spell.components.map((c) => componentMap[c]).join(", ")}
             </li>
             <li className="second small">
               <em>trvání</em>
@@ -71,11 +75,14 @@ export function CardFront({ spell }) {
             />
           </ul>
 
-          <b className="need">{spell.ingredients}</b>
-          <p className="text">description</p>
+          {spell.ingredients ? <b className="need">{spell.ingredients}</b> : null}
+          <p className="text" dangerouslySetInnerHTML={{ __html: spell.description.join("") }}></p>
         </div>
         <b className="class srclass">{spell.classes.join(", ")}</b>
-        <b className="type srtype">{spell.school}</b>
+        <b className="type srtype">
+          {spell.school}
+          {/* / {spellSchools[spell.school]} */}
+        </b>
       </div>
     </div>
   );
