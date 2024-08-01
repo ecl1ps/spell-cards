@@ -1,61 +1,67 @@
-﻿.card .text .damage.thunder {
-  color: #673c8a;
-}
-.card .text .damage.acid {
-  color: #bbc00d;
-}
-.card .text .damage.fire {
-  color: #cf5605;
-}
-.card .text .damage.psychic {
-  color: #b482a5;
-}
-.card .text .damage.lightning {
-  color: #3d6dc1;
-}
-.card .text .damage.poison {
-  color: #a6c505;
-}
-.card .text .damage.frost {
-  color: #65abb1;
-}
-.card .text .damage.force {
-  color: #9e1c20;
-}
-.card .text .damage.radiant {
-  color: #b98c07;
-}
-.card .text .damage.necrotic {
-  color: #7eb461;
-}
-.card .text .damage.slashing,
-.damage.piercing,
-.damage.bludgeoning {
-  color: #7a7877;
-}
-.card .text .advantage {
-  color: #45a04b;
-}
-.card .text .disadvantage,
-.card .text .disadvantage * {
-  color: #ef8686;
-}
+﻿.card .text {
+  .damage {
+    &.thunder {
+      color: #673c8a;
+    }
+    &.acid {
+      color: #bbc00d;
+    }
+    &.fire {
+      color: #cf5605;
+    }
+    &.psychic {
+      color: #b482a5;
+    }
+    &.lightning {
+      color: #3d6dc1;
+    }
+    &.poison {
+      color: #a6c505;
+    }
+    &.frost {
+      color: #65abb1;
+    }
+    &.force {
+      color: #9e1c20;
+    }
+    &.radiant {
+      color: #b98c07;
+    }
+    &.necrotic {
+      color: #7eb461;
+    }
+    &.slashing,
+    &.piercing,
+    &.bludgeoning {
+      color: #7a7877;
+    }
+  }
+  .advantage {
+    color: #45a04b;
+  }
+  .disadvantage,
+  .disadvantage * {
+    color: #ef8686;
+  }
 
-.card .text .ability.strength {
-  color: red;
-}
-.card .text .ability.dexterity {
-  color: green;
-}
-.card .text .ability.constitution {
-  color: orange;
-}
-.card .text .ability.intelligence {
-  color: blue;
-}
-.card .text .ability.wisdom {
-  color: #b0b015;
-}
-.card .text .ability.charisma {
-  color: purple;
+  .ability {
+    &.strength {
+      color: red;
+    }
+    &.dexterity {
+      color: green;
+    }
+    &.constitution {
+      color: orange;
+    }
+    &.intelligence {
+      color: blue;
+    }
+    &.wisdom {
+      color: #b0b015;
+    }
+    &.charisma {
+      color: purple;
+    }
+  }
 }

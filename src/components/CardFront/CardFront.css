@@ -1,94 +1,94 @@
-﻿.card .name {
-  font-size: 13px;
-  display: grid;
-  align-content: center;
-  align-items: center;
-  grid-template:
-    "level name1 empty"
-    "level separator empty"
-    "level name2 count";
-  height: 41px;
-}
-.type.srtype {
-  font-size: 9px;
-}
-.card.cardBlock,
-.card.cardBlock .need,
-.card,
-.card .need {
-  background-color: var(--color-background);
-}
-.card .name.srname {
-  background-color: var(--color-header);
-}
-.card.cardBlock .lined,
-.card.cardBlock .status li.second {
-  border-color: var(--color-background);
-}
-@media print {
-  .card.card-left {
-    box-shadow: var(--color-background) 0 3px 0px 3px !important;
+﻿.card.cardBlock {
+  .name {
+    font-size: 13px;
+    display: grid;
+    align-content: center;
+    align-items: center;
+    grid-template:
+      "level name1 empty"
+      "level separator empty"
+      "level name2 count";
+    height: 41px;
   }
-}
-.card.cardBlock .status li em {
-  color: black !important;
-}
-.card .class.srclass {
-  background-color: var(--color-background);
-  z-index: 1;
-  padding-right: 3px;
-}
-.name-first {
-  grid-area: name1;
-  font-size: 14px;
-}
-.name-first.small {
-  font-size: 13px;
-}
-.name-second {
-  grid-area: name2;
-  font-size: 9px;
-}
-.name-second.small {
-  font-size: 8px;
-}
-.name-suffix {
-  grid-area: count;
-  font-size: 7px;
-  min-width: 18px;
-  align-self: end;
-}
-.name-separator {
-  grid-area: separator;
-  margin: auto;
-  width: 50%;
-  border-color: var(--color-separator);
-}
-.name-level {
-  grid-area: level;
-}
-.name-level .level {
-  font-size: 18px;
-}
-.name-level .attributes {
-  font-size: 8px;
-}
-.status.lined em {
-  font-size: 9px;
-}
-.card .text > p {
-  padding: 0;
-  margin: 0;
-}
-.card .need {
-  font-style: normal;
-}
-.card .text {
-  line-height: 1em;
-  display: block;
-  width: 220px;
-  height: 192px;
-}
-.card .text * {
-  font-size: unset;
+  .type.srtype {
+    font-size: 9px;
+  }
+  &,
+  .need {
+    background-color: var(--color-background);
+  }
+  .name.srname {
+    background-color: var(--color-header);
+  }
+  .lined,
+  .status li.second {
+    border-color: var(--color-background);
+  }
+  @media print {
+    -left {
+      box-shadow: var(--color-background) 0 3px 0px 3px !important;
+    }
+  }
+  .status li em {
+    color: black !important;
+  }
+  .class.srclass {
+    background-color: var(--color-background);
+    z-index: 1;
+    padding-right: 3px;
+  }
+  .name-first {
+    grid-area: name1;
+    font-size: 14px;
+  }
+  .name-first.small {
+    font-size: 13px;
+  }
+  .name-second {
+    grid-area: name2;
+    font-size: 9px;
+  }
+  .name-second.small {
+    font-size: 8px;
+  }
+  .name-suffix {
+    grid-area: count;
+    font-size: 7px;
+    min-width: 18px;
+    align-self: end;
+  }
+  .name-separator {
+    grid-area: separator;
+    margin: auto;
+    width: 50%;
+    border-color: var(--color-separator);
+  }
+  .name-level {
+    grid-area: level;
+  }
+  .name-level .level {
+    font-size: 18px;
+  }
+  .name-level .attributes {
+    font-size: 8px;
+  }
+  .status.lined em {
+    font-size: 9px;
+  }
+  .text > p {
+    padding: 0;
+    margin: 0;
+  }
+  .need {
+    font-style: normal;
+  }
+  .text {
+    line-height: 1em;
+    display: block;
+    width: 220px;
+    height: 192px;
+  }
+  .text * {
+    font-size: unset;
+  }
 }
