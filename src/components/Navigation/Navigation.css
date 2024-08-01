@@ -1,0 +1,10 @@
+﻿.navigation {
+  background-color: #404040;
+  color: #fff;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+}

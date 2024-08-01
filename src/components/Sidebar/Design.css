@@ -1,5 +1,30 @@
-﻿.tools {
+﻿.icons .icon {
+  font-size: 233%;
+  line-height: normal;
+  position: static;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.tools {
   .icons .icon {
     color: #2c3e50;
+  }
+
+  .icons-selection {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 90vh;
+    width: 350px;
+    background: rgb(40, 40, 40);
+    padding: 30px;
+    white-space: normal;
+    overflow-y: scroll;
+    word-wrap: break-word;
+
+    .icons .icon {
+      color: #fff;
+    }
   }
 }

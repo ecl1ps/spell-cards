@@ -1,20 +1,23 @@
 body {
   font-family: "Segoe UI", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
 }
 
-#print-mode {
-  margin: 16px 0;
-  font-size: small;
+#root {
+  display: grid;
+  grid-template:
+    "navigation navigation"
+    "sidebar cards";
 }
 
-.card-left {
-  display: block;
-}
-.card-right {
-  display: block;
+.navigation {
+  grid-area: navigation;
 }
 
-.print-button {
-  margin: 16px;
-  font-size: small;
+.sidebar {
+  grid-area: sidebar;
+}
+
+.pages {
+  grid-area: cards;
 }

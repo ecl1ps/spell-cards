@@ -1,10 +1,16 @@
 // @ts-check
 import React from "react";
 import "./CardBack.css";
+import { useConfig } from "../../contexts";
 
+/**
+ * @param {{ spell: import("../../types").SpellCard }} spell
+ */
 export function CardBack({ spell }) {
+  const { icons } = useConfig();
+
   return (
-    <div className="card cardBlock card-right flip class-2">
+    <div className="card cardBlock card-right flip">
       <div className="backface">
         <div className="body">
           <div className="line">
@@ -14,9 +20,9 @@ export function CardBack({ spell }) {
             <i className="b-rb"></i>
             <b className="level-1">{spell.level === 0 ? "T" : spell.level}</b>
             <b className="level-2">{spell.level === 0 ? "T" : spell.level}</b>
-            <i className="icon-top rpg-Icon1_41"></i>
-            <i className="icon rpg-Icon1_59" title="1_59"></i>
-            <i className="icon-bot rpg-Icon1_65"></i>
+            <i className={`icon-top rpg-Icon${icons.top}`}></i>
+            <i className={`icon rpg-Icon${icons.mid}`}></i>
+            <i className={`icon-bot rpg-Icon${icons.bot}`}></i>
           </div>
         </div>
       </div>

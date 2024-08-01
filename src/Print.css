@@ -18,4 +18,60 @@
   .subpage {
     zoom: 1;
   }
+
+  body {
+    background-color: transparent;
+  }
+
+  html .card {
+    margin: 0 1px 1px 0;
+  }
+
+  html .page {
+    margin: 0 !important;
+    border: initial !important;
+    border-radius: initial !important;
+    width: initial !important;
+    min-height: initial !important;
+    box-shadow: initial !important;
+    background: initial !important;
+    page-break-after: always !important;
+  }
+
+  html body .page {
+    margin: 0 !important;
+    padding: 0;
+    width: 208mm !important;
+    /* full: 210.0mm; */
+    height: 266mm !important;
+    /* full: 297.0mm; */
+  }
+
+  html .page.sec {
+    padding-top: 1.2cm !important;
+  }
+
+  .navigation,
+  .sidebar,
+  .noprint {
+    display: none !important;
+  }
+
+  html .subpage {
+    margin-left: 0;
+  }
+
+  .editing .card {
+    display: none;
+  }
+
+  .editing .card.select {
+    display: inline-block;
+  }
+
+  .card.select {
+    outline: 0;
+    background-color: transparent;
+    opacity: 1;
+  }
 }

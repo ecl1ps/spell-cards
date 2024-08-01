@@ -4,9 +4,14 @@ import { usePages } from "./usePages";
 import { Page } from "../Page";
 import { splitSpellsToCards } from "../../utils/splitSpellsToCards";
 import { applyFilters } from "./applyFilters";
+import { useConfig } from "../../contexts";
 
+/**
+ * @param {{ spells: import("../../types").Spell[] }} spells
+ */
 export function Cards({ spells }) {
-  const filteredSpells = applyFilters(spells, { classes: ["čaroděj"], levels: [0, 1, 9] });
+  const { className } = useConfig();
+  const filteredSpells = applyFilters(spells, { classes: [className], levels: [9] });
   const spellsByCard = splitSpellsToCards(filteredSpells);
   const pages = usePages(spellsByCard, 9);
 
@@ -15,7 +20,7 @@ export function Cards({ spells }) {
   }
 
   return (
-    <div id="myCanvas" className="container pages">
+    <div className="container pages">
       <div className="cardlist">
         {pages.map((page, index) => (
           <Page key={index} spells={page} />

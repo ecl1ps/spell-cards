@@ -1,0 +1,13 @@
+﻿.sidebar {
+  background-color: #404040;
+  width: 377px;
+  display: block;
+  color: #fff;
+  overflow: auto;
+}
+
+.tools {
+  margin: 0 10px;
+  padding: 20px;
+  background: white;
+}

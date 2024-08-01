@@ -2,36 +2,6 @@
   -webkit-print-color-adjust: exact;
 }
 
-body {
-  padding-top: 50px;
-}
-body > .navbar {
-  -webkit-transition: background-color 300ms ease-in;
-  transition: background-color 300ms ease-in;
-}
-@media (min-width: 768px) {
-  body > .navbar-transparent {
-    background-color: transparent;
-  }
-  body > .navbar-transparent .navbar-nav > .open > a {
-    background-color: transparent !important;
-  }
-}
-#home {
-  padding-top: 0;
-}
-#home .navbar-brand {
-  padding: 13.5px 15px 12.5px;
-}
-#home .navbar-brand > img {
-  display: inline;
-  margin: 0 10px;
-  height: 100%;
-}
-#banner {
-  min-height: 300px;
-  border-bottom: none;
-}
 .page-header h1 {
   font-size: 4em;
 }
@@ -181,7 +151,6 @@ footer p {
 @media (max-width: 1640px) and (min-width: 1325px) {
   .container {
     margin-right: auto;
-    margin-left: 335px;
     width: 970px;
   }
 
@@ -653,50 +622,6 @@ li.iconOnly a span.head {
   display: inline;
 }
 
-.COINWIDGETCOM_CONTAINER {
-  vertical-align: top;
-}
-
-.yashare-auto-init {
-  display: inline-block;
-  vertical-align: top;
-}
-
-body .b-share__handle {
-  padding: 1px 4px 5px 2px !important;
-}
-
-body .b-share {
-  padding: 1px 3px 1px 4px !important;
-  vertical-align: top;
-}
-
-.landscape .page {
-  margin: 1cm 1cm 1cm auto;
-}
-
-@media screen and (max-width: 1300px) {
-  /*   .page {
-        margin:1cm 10px 1cm auto;
-        zoom: 0.8;
-    }
-    .tools {
-        width: 33%!important;
-    }
-	.noprint {
-	  margin: 0.5cm 10px 0.5cm auto!important;
-	  zoom: 0.8;
-	}    */
-}
-
-.commG > div {
-  margin-left: 0 !important;
-}
-
-.DJa {
-  display: none !important;
-}
-
 /*
   cards
 */
@@ -1141,15 +1066,6 @@ body .b-share {
   line-height: 150px;
 }
 
-.icons .icon {
-  font-size: 233%;
-  line-height: normal;
-  position: static;
-  color: #fff !important;
-  opacity: 0.7;
-  cursor: pointer;
-}
-
 .classedit .card .icon,
 .classedit .card .icon-top,
 .classedit .card .icon-bot {
@@ -1272,99 +1188,6 @@ html .showAll .mirrorpage {
 
 .showAll .noprint {
   display: none;
-}
-
-/*print common*/
-
-@media print {
-  body {
-    background-color: transparent;
-  }
-
-  html .card {
-    margin: 0 1px 1px 0;
-  }
-
-  html .showAll .page {
-    display: block;
-  }
-
-  html .spellbook .page,
-  html .page {
-    margin: 0 !important;
-    border: initial !important;
-    border-radius: initial !important;
-    width: initial !important;
-    min-height: initial !important;
-    box-shadow: initial !important;
-    background: initial !important;
-    page-break-after: always !important;
-  }
-
-  html body .page {
-    margin: 0 !important;
-    padding: 0;
-    width: 208mm !important;
-    /* full: 210.0mm; */
-    height: 266mm !important;
-    /* full: 297.0mm; */
-  }
-
-  html .page.sec {
-    padding-top: 1.2cm !important;
-  }
-
-  html .joesterMode .page {
-    margin: 0 !important;
-    padding: 0 !important;
-    width: 100%;
-    height: 168mm;
-    zoom: 0.93 !important;
-  }
-
-  .tools,
-  .thanks,
-  .home,
-  .downloadlink,
-  .create,
-  .downloadlink,
-  .noprint {
-    display: none !important;
-  }
-
-  html .subpage {
-    margin-left: 0;
-  }
-
-  .editing .card {
-    display: none;
-  }
-
-  .editing .card.select {
-    display: inline-block;
-  }
-
-  .card.select {
-    outline: 0;
-    background-color: transparent;
-    opacity: 1;
-  }
-
-  html .mirrorpage {
-    display: block !important;
-    padding-left: 0 !important;
-    padding-right: 0.2cm !important;
-    padding-top: 0.05cm !important;
-  }
-
-  html .joesterMode .mirrorpage {
-    display: none !important;
-  }
-
-  .spellbook .cardBlock {
-    page-break-after: auto !important;
-    page-break-inside: avoid !important;
-  }
 }
 
 .card.cardBlock,
@@ -1776,24 +1599,4 @@ html .print .page {
   box-shadow: initial !important;
   background: initial !important;
   page-break-after: always !important;
-}
-
-.dislexic .card .text {
-  font-size: 9px;
-}
-
-body.dislexic,
-.dislexic h1,
-.dislexic h2,
-.dislexic h3,
-.dislexic h4,
-.dislexic h5,
-.dislexic h6,
-.dislexic .h1,
-.dislexic .h2,
-.dislexic .h3,
-.dislexic .h4,
-.dislexic .h5,
-.dislexic .h6 {
-  font-family: "OpenDyslexic", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }

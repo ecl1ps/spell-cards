@@ -7,41 +7,14 @@ import "./TextFormat.css";
 const componentMap = { V: "Verb.", S: "Sur.", P: "Poh." };
 
 /**
- * @typedef {{
- *    name: string,
- *    originalName: string | undefined,
- *    sourceBook: string,
- *    level: number,
- *    school: string,
- *    castTime: string,
- *    concentration: boolean,
- *    ritual: boolean,
- *    range: string,
- *    components: ["V"| "P"|"S"],
- *    ingredients: string[],
- *    duration: string,
- *    classes: string[],
- *    description: string[],
- *  }} Spell
- */
-
-/**
- * @typedef {Spell & {
- *    formattedDescription: string,
- *    cardMax: number,
- *    cardNumber: number,
- *  }} SpellCard
- */
-
-/**
- * @param {{ spell: SpellCard }} spell
+ * @param {{ spell: import("../../types").SpellCard }} spell
  */
 export function CardFront({ spell }) {
   return (
-    <div id="c6da94" className="card card-left cardBlock class-2">
+    <div id="c6da94" className="card card-left cardBlock">
       <div className="front">
         <div className="body">
-          <h3 className={`name lined srname${!spell.originalName ? " no-second-name" : ""}`}>
+          <div className={`name lined srname${!spell.originalName ? " no-second-name" : ""}`}>
             <div className="name-level">
               <span className="level">{spell.level === 0 ? "T" : spell.level}</span>
               <span className="attributes">
@@ -57,7 +30,7 @@ export function CardFront({ spell }) {
               </>
             )}
             <div className="name-suffix">{spell.cardMax > 1 ? `[${spell.cardNumber}/${spell.cardMax}]` : ""}</div>
-          </h3>
+          </div>
           <ul className="status lined">
             <li>
               <em>vyvolání</em>

@@ -1,7 +1,7 @@
 ﻿// @ts-check
 
 /**
- * @param {import("../CardFront/CardFront").Spell[]} spells
+ * @param {import("../../types").Spell[]} spells
  * @param {{ classes?: string[], levels?: number[]}} arg1
  */
 export function applyFilters(spells, { classes, levels }) {

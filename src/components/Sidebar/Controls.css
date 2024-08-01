@@ -1,0 +1,16 @@
+﻿#print-mode {
+  margin: 16px 0;
+  font-size: small;
+}
+
+.card-left {
+  display: block;
+}
+.card-right {
+  display: block;
+}
+
+.print-button {
+  margin: 16px;
+  font-size: small;
+}
