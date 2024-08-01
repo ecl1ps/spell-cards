@@ -1,9 +1,11 @@
 // @ts-check
 import React, { useEffect, useState } from "react";
 import "./App.css";
-import { Tools } from "./components/Tools";
+import "./Print.css";
+import "./Icons.css";
+import { Tools } from "./components/Sidebar";
 import { Navigation } from "./components/Navigation";
-import { Cards } from "./components/Cards/Cards";
+import { Cards } from "./components/Cards";
 
 function App() {
   const [spells, setSpells] = useState();

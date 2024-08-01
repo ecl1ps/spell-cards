@@ -1,0 +1,29 @@
+﻿@media print {
+  .card.card-right {
+    box-shadow: var(--color-background) 0 3px 0px 3px !important;
+  }
+}
+.card.cardBlock .backface .line,
+.card.cardBlock .b-lt,
+.card.cardBlock .b-rt,
+.card.cardBlock .b-lb,
+.card.cardBlock .b-rb,
+.cardBlock .body .b-lt:after,
+.cardBlock .body .b-rt:after,
+.cardBlock .body .b-lb:after,
+.cardBlock .body .b-rb:after,
+.cardBlock .body .b-lt:before,
+.cardBlock .body .b-rt:before,
+.cardBlock .body .b-lb:before,
+.cardBlock .body .b-rb:before {
+  color: var(--color-backface) !important;
+  border-color: var(--color-backface-border) !important;
+}
+.card.cardBlock .level-1,
+.card.cardBlock .level-2,
+.card.cardBlock .icon,
+.card.cardBlock .icon-bot,
+.card.cardBlock .icon-top {
+  color: var(--color-backface-symbols) !important;
+  border-color: var(--color-backface-symbols) !important;
+}

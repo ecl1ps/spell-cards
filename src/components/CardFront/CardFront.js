@@ -1,6 +1,8 @@
 // @ts-check
 import React from "react";
-import { spellSchools } from "./spellSchools";
+import { spellSchools } from "../spellSchools";
+import "./CardFront.css";
+import "./TextFormat.css";
 
 const componentMap = { V: "Verb.", S: "Sur.", P: "Poh." };
 
@@ -39,7 +41,7 @@ export function CardFront({ spell }) {
     <div id="c6da94" className="card card-left cardBlock class-2">
       <div className="front">
         <div className="body">
-          <h3 className="name lined srname">
+          <h3 className={`name lined srname${!spell.originalName ? " no-second-name" : ""}`}>
             <div className="name-level">
               <span className="level">{spell.level === 0 ? "T" : spell.level}</span>
               <span className="attributes">
@@ -48,8 +50,12 @@ export function CardFront({ spell }) {
               </span>
             </div>
             <div className={`name-first${spell.name.length > 20 ? " small" : ""}`}>{spell.name}</div>
-            <hr className="name-separator" />
-            <div className={`name-second${spell.originalName?.length ?? 0 > 30 ? " small" : ""}`}>{spell.originalName}</div>
+            {spell.originalName && (
+              <>
+                <hr className="name-separator" />
+                <div className={`name-second${spell.originalName.length > 30 ? " small" : ""}`}>{spell.originalName}</div>
+              </>
+            )}
             <div className="name-suffix">{spell.cardMax > 1 ? `[${spell.cardNumber}/${spell.cardMax}]` : ""}</div>
           </h3>
           <ul className="status lined">

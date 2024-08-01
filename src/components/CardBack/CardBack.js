@@ -1,5 +1,6 @@
 // @ts-check
 import React from "react";
+import "./CardBack.css";
 
 export function CardBack({ spell }) {
   return (
